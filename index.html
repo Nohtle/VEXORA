@@ -1,0 +1,1150 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>VEXORA</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="VEXORA é um grupo de tecnologia com duas marcas especializadas: WEBVEX, desenvolvimento de sites e soluções web, e SECURAVEX, análise de segurança web e proteção digital.">
+<meta name="theme-color" content="#050708">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="VEXORA">
+<meta property="og:title" content="VEXORA | Tecnologia que transforma negócios">
+<meta property="og:description" content="Desenvolvimento web e segurança digital unidos por tecnologia, estratégia e inovação.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="VEXORA | Tecnologia que transforma negócios">
+<meta name="twitter:description" content="Desenvolvimento web e segurança digital unidos por tecnologia, estratégia e inovação.">
+<!-- Ao hospedar em domínio próprio, acrescente <link rel="canonical"> e <meta property="og:image"> (imagem 1200x630 em URL pública). -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23050708'/%3E%3Cpath d='M32 7 54 19.5v25L32 57 10 44.5v-25z' fill='none' stroke='%2300FF7A' stroke-width='3'/%3E%3Cpath d='M20 24l12 22 12-22' fill='none' stroke='%23E5E7EB' stroke-width='4.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"VEXORA","slogan":"Tecnologia que transforma negócios.","description":"Grupo de tecnologia responsável pelas marcas WEBVEX (desenvolvimento web) e SECURAVEX (segurança digital).","sameAs":["https://www.instagram.com/webvex.digital/","https://www.instagram.com/securavex/"],"brand":[{"@type":"Brand","name":"WEBVEX"},{"@type":"Brand","name":"SECURAVEX"}]}</script>
+<style>
+/* Conceito de layout: arquitetura digital. Grade fina, coordenadas e linhas de projeto sobre preto profundo; o verde neon só aparece onde há ação ou conexão. */
+:root{
+  --ink-0:#050708; --ink-1:#0B0F12; --graphite:#202A30; --neon:#00FF7A; --ice:#E5E7EB;
+  --mute:#93A0A8; --dim:#5F6C74;
+  --line:rgba(229,231,235,.10); --line-2:rgba(229,231,235,.18);
+  --neon-a:rgba(0,255,122,.12); --neon-b:rgba(0,255,122,.35);
+  --f-display:"Syne","Trebuchet MS",system-ui,sans-serif;
+  --f-body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  --ease:cubic-bezier(.2,.7,.2,1);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ink-0);color:var(--ice);font:400 1.0625rem/1.65 var(--f-body);overflow-x:hidden;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}
+img,svg{max-width:100%}
+h1,h2,h3,h4,p,ul,ol,figure{margin:0}
+ul,ol{padding:0;list-style:none}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--neon);outline-offset:3px;border-radius:4px}
+::selection{background:var(--neon);color:var(--ink-0)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:fixed;left:16px;top:-60px;z-index:200;background:var(--neon);color:var(--ink-0);padding:10px 16px;border-radius:8px;font-weight:700;transition:top .2s}
+.skip:focus{top:12px}
+
+.wrap{width:100%;max-width:1320px;margin-inline:auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+section{position:relative;scroll-margin-top:72px}
+.mono{font-family:var(--f-mono)}
+.eyebrow{display:inline-flex;align-items:center;gap:.7rem;font:500 .72rem/1 var(--f-mono);letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+.eyebrow::before{content:"";width:7px;height:7px;background:var(--neon);box-shadow:0 0 10px var(--neon-b);transform:rotate(45deg)}
+.h2{font:800 clamp(2rem,4.6vw,3.9rem)/1.02 var(--f-display);letter-spacing:-.03em;text-wrap:balance}
+.h2 em{font-style:normal;color:var(--neon)}
+.lead{font-size:clamp(1.05rem,1.4vw,1.25rem);color:var(--mute);max-width:56ch;text-wrap:pretty}
+
+/* revelação ao rolar: o estado inicial já é legível (opacidade parcial) */
+.js .rv{opacity:.2;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0s)}
+.js .rv.in{opacity:1;transform:none}
+
+/* botões */
+.btn{--p:0;position:relative;display:inline-flex;align-items:center;gap:.7rem;padding:.95rem 1.5rem;border-radius:999px;font:600 .95rem/1 var(--f-body);letter-spacing:.01em;border:1px solid var(--line-2);background:rgba(229,231,235,.03);color:var(--ice);overflow:hidden;isolation:isolate;transition:transform .35s var(--ease),border-color .3s,color .3s,box-shadow .3s;will-change:transform}
+.btn::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--neon);transform:translateY(101%);transition:transform .45s var(--ease)}
+.btn .ar{width:16px;height:16px;transition:transform .35s var(--ease)}
+.btn:hover,.btn:focus-visible{color:var(--ink-0);border-color:var(--neon);box-shadow:0 0 0 4px var(--neon-a),0 10px 40px -10px var(--neon-b)}
+.btn:hover::before,.btn:focus-visible::before{transform:none}
+.btn:hover .ar{transform:translate(3px,-3px)}
+.btn.pri{background:var(--neon);color:var(--ink-0);border-color:var(--neon)}
+.btn.pri::before{background:var(--ice)}
+.btn.pri:hover{border-color:var(--ice);box-shadow:0 0 0 4px rgba(229,231,235,.12),0 10px 40px -10px var(--neon-b)}
+.btn.sm{padding:.7rem 1.1rem;font-size:.85rem}
+.tl{display:inline-flex;align-items:center;gap:.5rem;font:500 .8rem/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mute);padding:.4rem 0;border-bottom:1px solid transparent;transition:color .25s,border-color .25s}
+.tl:hover,.tl:focus-visible{color:var(--neon);border-color:var(--neon)}
+
+/* carregamento */
+#loader{position:fixed;inset:0;z-index:300;background:var(--ink-0);display:grid;place-items:center;animation:ldOut .6s 3.2s forwards}
+#loader .lw{display:flex;flex-direction:column;align-items:center;gap:1.4rem}
+#loader svg{width:64px;height:64px;overflow:visible}
+#loader .hx{stroke-dasharray:210;stroke-dashoffset:210;animation:draw 1.1s var(--ease) forwards}
+#loader .vv{stroke-dasharray:70;stroke-dashoffset:70;animation:draw .8s .5s var(--ease) forwards}
+#loader .nm{font:800 1.1rem/1 var(--f-display);letter-spacing:.5em;padding-left:.5em;color:var(--ice);opacity:0;animation:fadeUp .7s .6s forwards}
+#loader .bar{width:140px;height:1px;background:var(--line-2);position:relative;overflow:hidden}
+#loader .bar::after{content:"";position:absolute;inset:0;background:var(--neon);transform:translateX(-100%);animation:bar 1.4s .2s var(--ease) forwards}
+html.done #loader{animation:ldOut .7s var(--ease) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes bar{to{transform:none}}
+@keyframes ldOut{to{opacity:0;visibility:hidden;transform:translateY(-3%)}}
+
+/* progresso e navegação */
+#prog{position:fixed;left:0;top:0;height:2px;width:100%;background:var(--neon);transform:scaleX(0);transform-origin:0 50%;z-index:120;box-shadow:0 0 12px var(--neon-b)}
+.nav{position:fixed;left:0;right:0;top:0;z-index:100;padding-top:env(safe-area-inset-top,0px);transition:background .4s,backdrop-filter .4s,border-color .4s,transform .5s var(--ease);border-bottom:1px solid transparent}
+.nav .in{display:flex;align-items:center;justify-content:space-between;height:84px;transition:height .4s var(--ease)}
+.nav.sc{background:rgba(5,7,8,.72);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);border-color:var(--line)}
+.nav.sc .in{height:64px}
+.logo{display:inline-flex;align-items:center;gap:.7rem;font:800 1.15rem/1 var(--f-display);letter-spacing:.22em}
+.logo svg{width:30px;height:30px;flex:none}
+.logo .hx{transition:stroke-dashoffset .8s var(--ease)}
+.menu{display:flex;align-items:center;gap:2.2rem}
+.menu a.lk{position:relative;font:500 .78rem/1 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--mute);padding:.5rem 0;transition:color .25s}
+.menu a.lk::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--neon);transform:scaleX(0);transform-origin:0 50%;transition:transform .4s var(--ease)}
+.menu a.lk:hover,.menu a.lk.on{color:var(--ice)}
+.menu a.lk:hover::after,.menu a.lk.on::after{transform:none}
+.burger{display:none;width:44px;height:44px;border:1px solid var(--line-2);border-radius:50%;background:rgba(5,7,8,.5);cursor:pointer;position:relative;z-index:130}
+.burger i{position:absolute;left:13px;right:13px;height:1.5px;background:var(--ice);transition:transform .45s var(--ease),opacity .2s,top .45s var(--ease)}
+.burger i:nth-child(1){top:16px}.burger i:nth-child(2){top:21px}.burger i:nth-child(3){top:26px}
+.burger[aria-expanded="true"] i:nth-child(1){top:21px;transform:rotate(45deg)}
+.burger[aria-expanded="true"] i:nth-child(2){opacity:0}
+.burger[aria-expanded="true"] i:nth-child(3){top:21px;transform:rotate(-45deg)}
+.sheet{position:fixed;inset:0;z-index:98;background:rgba(5,7,8,.97);backdrop-filter:blur(10px);display:flex;flex-direction:column;justify-content:center;gap:.4rem;padding:96px max(28px,env(safe-area-inset-left,0px)) max(40px,env(safe-area-inset-bottom,0px));clip-path:circle(0 at calc(100% - 42px) 42px);visibility:hidden;transition:clip-path .7s var(--ease),visibility 0s .7s}
+.sheet.open{clip-path:circle(150% at calc(100% - 42px) 42px);visibility:visible;transition:clip-path .8s var(--ease),visibility 0s}
+.sheet a.sl{display:flex;align-items:baseline;gap:1rem;font:800 clamp(2rem,9vw,3rem)/1.15 var(--f-display);letter-spacing:-.02em;padding:.35rem 0;border-bottom:1px solid var(--line);opacity:0;transform:translateY(22px);transition:opacity .5s,transform .6s var(--ease),color .2s}
+.sheet a.sl small{font:500 .7rem var(--f-mono);color:var(--neon);letter-spacing:.15em}
+.sheet.open a.sl{opacity:1;transform:none;transition-delay:calc(.15s + var(--i)*.06s)}
+.sheet a.sl:hover{color:var(--neon)}
+.sheet .btn{margin-top:1.6rem;align-self:flex-start}
+body.lock{overflow:hidden}
+.dots{position:fixed;right:max(18px,env(safe-area-inset-right,0px));top:50%;transform:translateY(-50%);z-index:80;display:flex;flex-direction:column;gap:14px}
+.dots a{position:relative;width:9px;height:9px;border-radius:50%;border:1px solid var(--dim);transition:all .3s var(--ease)}
+.dots a span{position:absolute;right:20px;top:50%;transform:translate(8px,-50%);font:500 .65rem var(--f-mono);letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;color:var(--ice);opacity:0;pointer-events:none;transition:all .3s var(--ease)}
+.dots a:hover span,.dots a:focus-visible span{opacity:1;transform:translate(0,-50%)}
+.dots a.on{background:var(--neon);border-color:var(--neon);box-shadow:0 0 12px var(--neon-b);transform:scale(1.25)}
+
+/* HERO */
+.hero{min-height:clamp(680px,96svh,980px);display:flex;align-items:center;padding-block:130px 90px;overflow:hidden;isolation:isolate}
+.gridbg{position:absolute;inset:0;z-index:-2;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:72px 72px;background-position:center top;-webkit-mask-image:radial-gradient(ellipse 80% 70% at 62% 45%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse 80% 70% at 62% 45%,#000 20%,transparent 75%);transform:translateY(calc(var(--sy,0) * -.08px))}
+.glow{position:absolute;z-index:-1;width:60vw;max-width:900px;aspect-ratio:1;right:-8%;top:50%;transform:translateY(-50%);background:radial-gradient(circle,rgba(0,255,122,.16),rgba(0,255,122,.04) 40%,transparent 68%);filter:blur(20px);pointer-events:none}
+.hero .wrap{position:relative}
+.hero-copy{position:relative;z-index:2;max-width:760px}
+.tag{display:inline-flex;align-items:center;gap:.8rem;font:500 .72rem/1 var(--f-mono);letter-spacing:.28em;text-transform:uppercase;color:var(--neon);padding:.65rem 1rem;border:1px solid var(--neon-b);border-radius:999px;background:rgba(0,255,122,.05)}
+.tag i{width:6px;height:6px;border-radius:50%;background:var(--neon);box-shadow:0 0 10px var(--neon);animation:blink 2.2s infinite}
+@keyframes blink{50%{opacity:.25}}
+h1.hl{font:800 clamp(2.7rem,7.4vw,6.6rem)/.98 var(--f-display);letter-spacing:-.04em;margin-top:1.8rem;text-wrap:balance}
+.hl .ln{display:block}
+.hl .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em}
+.hl .w>span{display:inline-block}
+.js .hl .w>span{transform:translateY(112%);transition:transform 1.1s var(--ease);transition-delay:calc(.12s + var(--i)*.07s)}
+.js.ready .hl .w>span{transform:none}
+.hl .g{color:var(--neon);text-shadow:0 0 40px rgba(0,255,122,.35)}
+.hl .o{color:transparent;-webkit-text-stroke:1.5px var(--ice)}
+.hero .lead{margin-top:1.8rem;max-width:46ch}
+.cta-row{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.4rem}
+.js .hero .fx{opacity:0;transform:translateY(20px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:calc(.9s + var(--i,0)*.12s)}
+.js.ready .hero .fx{opacity:1;transform:none}
+.hero-art{position:absolute;right:-9%;top:50%;width:min(780px,60vw);aspect-ratio:1;transform:translateY(-50%);z-index:1;pointer-events:none}
+.hero-art canvas{width:100%;height:100%;display:block}
+.hud{position:absolute;left:0;right:0;bottom:34px;z-index:3}
+.hud .wrap{display:flex;align-items:flex-end;justify-content:space-between;gap:1.5rem;flex-wrap:wrap}
+.hud ul{display:flex;gap:2.4rem;flex-wrap:wrap}
+.hud li{font:400 .7rem/1.5 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.hud li b{display:block;font-weight:500;color:var(--mute)}
+.cue{display:flex;align-items:center;gap:.9rem;font:500 .68rem var(--f-mono);letter-spacing:.24em;text-transform:uppercase;color:var(--mute)}
+.cue i{width:1px;height:44px;background:linear-gradient(var(--neon),transparent);position:relative;overflow:hidden}
+.cue i::after{content:"";position:absolute;left:0;right:0;top:-100%;height:100%;background:var(--ice);animation:cue 2.2s var(--ease) infinite}
+@keyframes cue{to{top:100%}}
+
+/* faixa de transição */
+.rule{display:flex;align-items:center;gap:1rem;font:400 .68rem var(--f-mono);letter-spacing:.2em;text-transform:uppercase;color:var(--dim);padding-block:1.2rem;border-top:1px solid var(--line)}
+.rule::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line-2),transparent)}
+
+/* SOBRE */
+.about{padding-block:clamp(80px,10vw,140px) clamp(50px,6vw,90px)}
+.about .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(40px,7vw,110px);align-items:center}
+.about .copy{display:flex;flex-direction:column;gap:1.8rem}
+.about .copy .h2{margin-top:.4rem}
+.caps{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:.6rem}
+.caps li{font:500 .75rem var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);padding:.55rem .9rem;border:1px solid var(--line-2);border-radius:999px;transition:all .3s}
+.caps li:hover{color:var(--neon);border-color:var(--neon-b)}
+.orbit{position:relative;aspect-ratio:1;width:100%;max-width:560px;margin-inline:auto}
+.orbit svg{width:100%;height:100%;overflow:visible}
+.orbit .spin{transform-origin:260px 260px;animation:spin 60s linear infinite}
+.orbit .spin.r{animation-direction:reverse;animation-duration:90s}
+@keyframes spin{to{transform:rotate(360deg)}}
+.orbit text.ring{font:500 11px var(--f-mono);letter-spacing:.32em;fill:var(--dim);text-transform:uppercase}
+.orbit .lnk{stroke:var(--neon);stroke-width:1.2;stroke-dasharray:4 7;animation:dash 2.4s linear infinite;opacity:.8}
+@keyframes dash{to{stroke-dashoffset:-22}}
+.orbit .nd text{font:700 15px var(--f-display);letter-spacing:.16em;fill:var(--ice)}
+.orbit .nd small{font:400 9px var(--f-mono)}
+.orbit .pulse{transform-box:fill-box;transform-origin:center;animation:pulse 3.2s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.6);opacity:.7}100%{transform:scale(2.2);opacity:0}}
+
+/* ECOSSISTEMA */
+.eco{padding-top:clamp(20px,3vw,40px)}
+.eco-head{display:flex;flex-direction:column;gap:1.4rem;margin-bottom:clamp(40px,6vw,80px)}
+.eco-head>*{max-width:820px}
+.brand{position:relative;padding-block:clamp(60px,8vw,120px);overflow:hidden;isolation:isolate}
+.brand .wm{position:absolute;z-index:-1;font:800 clamp(7rem,24vw,22rem)/.8 var(--f-display);letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1px rgba(229,231,235,.07);white-space:nowrap;user-select:none;pointer-events:none;transform:translateX(calc(var(--sy,0) * .03px))}
+.brand .grid{display:grid;grid-template-columns:5fr 7fr;gap:clamp(36px,6vw,96px);align-items:center}
+.brand .info{display:flex;flex-direction:column;gap:1.6rem}
+.brand .cat{display:inline-flex;align-items:center;gap:.8rem;font:500 .72rem/1 var(--f-mono);letter-spacing:.24em;text-transform:uppercase;color:var(--neon)}
+.brand .cat svg{width:34px;height:34px}
+.brand h3{font:800 clamp(2.4rem,5vw,4.4rem)/.95 var(--f-display);letter-spacing:-.04em}
+.brand p.d{color:var(--mute);max-width:50ch}
+.svc{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.svc li{display:flex;align-items:center;gap:1rem;padding:.8rem 0;border-bottom:1px solid var(--line);font-weight:500;color:var(--ice);transition:padding .35s var(--ease),color .25s}
+.svc li::before{content:"";width:14px;height:1px;background:var(--neon);transition:width .35s var(--ease)}
+.svc li:hover{padding-left:.6rem}
+.svc li:hover::before{width:26px}
+.brand .acts{display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem 1.6rem;margin-top:.6rem}
+.b-web{background:linear-gradient(180deg,var(--ink-0),var(--ink-1) 60%,var(--ink-0))}
+.b-web .wm{top:2%;left:-3%}
+.b-sec{background:radial-gradient(ellipse 70% 60% at 25% 50%,rgba(32,42,48,.9),var(--ink-0) 75%);border-top:1px solid var(--line)}
+.b-sec .wm{bottom:0;right:-3%}
+.b-sec .grid{grid-template-columns:7fr 5fr}
+.b-sec .vis{order:-1}
+.b-sec .info .cat{color:var(--neon)}
+.b-sec::before{content:"";position:absolute;inset:0;z-index:-1;background-image:repeating-linear-gradient(135deg,rgba(229,231,235,.03) 0 1px,transparent 1px 14px);-webkit-mask-image:linear-gradient(90deg,#000,transparent 70%);mask-image:linear-gradient(90deg,#000,transparent 70%)}
+
+/* WEBVEX visual: interface e código */
+.vis{position:relative;min-width:0}
+.ide{position:relative;border:1px solid var(--line-2);border-radius:14px;background:linear-gradient(180deg,rgba(11,15,18,.95),rgba(5,7,8,.95));box-shadow:0 50px 100px -40px rgba(0,255,122,.18),0 0 0 1px rgba(0,0,0,.4);overflow:hidden}
+.ide .tb{display:flex;align-items:center;gap:.5rem;padding:.8rem 1rem;border-bottom:1px solid var(--line);font:400 .7rem var(--f-mono);color:var(--dim)}
+.ide .tb i{width:9px;height:9px;border-radius:50%;background:var(--graphite)}
+.ide .tb span{margin-left:.8rem;padding:.25rem .7rem;border:1px solid var(--line);border-radius:6px;color:var(--mute)}
+.ide .bd{display:grid;grid-template-columns:1.1fr .9fr;min-height:340px}
+.code{margin:0;padding:1.3rem 1.2rem 1.3rem 1rem;font:400 .8rem/1.85 var(--f-mono);color:var(--mute);overflow:hidden;white-space:pre-wrap;word-break:break-word;border-right:1px solid var(--line)}
+.code .k{color:var(--neon)}.code .s{color:#C9D3D9}.code .c{color:var(--dim)}.code .n{color:var(--ice)}
+.code .cr{display:inline-block;width:.55em;height:1.05em;background:var(--neon);vertical-align:-.2em;animation:blink 1s steps(1) infinite}
+.prev{position:relative;padding:1.2rem;display:flex;flex-direction:column;gap:.9rem;background:radial-gradient(circle at 70% 0,rgba(0,255,122,.08),transparent 60%)}
+.prev .pb{height:10px;border-radius:5px;background:var(--graphite);transform-origin:0 50%;animation:grow 4s var(--ease) infinite alternate}
+.prev .pb.a{width:42%;background:var(--neon);opacity:.85}.prev .pb.b{width:86%;animation-delay:.3s}.prev .pb.c{width:70%;animation-delay:.6s}
+.prev .blk{flex:1;border:1px dashed var(--line-2);border-radius:10px;display:grid;grid-template-columns:1fr 1fr;gap:.6rem;padding:.6rem}
+.prev .blk i{border-radius:6px;background:linear-gradient(135deg,var(--graphite),var(--ink-1));border:1px solid var(--line)}
+.prev .blk i:first-child{grid-column:span 2;background:linear-gradient(135deg,rgba(0,255,122,.22),rgba(0,255,122,.02));border-color:var(--neon-b)}
+@keyframes grow{from{transform:scaleX(.72)}to{transform:scaleX(1)}}
+.devs{position:absolute;right:-18px;bottom:-34px;display:flex;align-items:flex-end;gap:10px;filter:drop-shadow(0 24px 30px rgba(0,0,0,.6))}
+.devs i{display:block;border:1.5px solid var(--neon);border-radius:8px;background:var(--ink-0);position:relative}
+.devs i::after{content:"";position:absolute;left:18%;right:18%;top:14px;height:3px;border-radius:2px;background:var(--line-2);box-shadow:0 8px 0 var(--line),0 16px 0 var(--line)}
+.devs .d1{width:108px;height:72px}.devs .d2{width:62px;height:84px}.devs .d3{width:34px;height:62px;border-radius:7px}
+.devs .d3::after{left:20%;right:20%}
+
+/* SECURAVEX visual: rede e proteção */
+.net{position:relative;border:1px solid var(--line-2);border-radius:14px;background:linear-gradient(160deg,rgba(32,42,48,.55),rgba(5,7,8,.9));overflow:hidden;aspect-ratio:10/7.4}
+.net svg{width:100%;height:100%;display:block}
+.net .sweep{transform-origin:300px 222px;animation:spin 7s linear infinite}
+.net .ring{fill:none;stroke:var(--line-2);stroke-dasharray:2 6}
+.net .ed{stroke:rgba(229,231,235,.2);stroke-width:1}
+.net .ed.hot{stroke:var(--neon);stroke-dasharray:5 7;animation:dash 2s linear infinite;opacity:.9}
+.net .sat{fill:var(--ink-0);stroke:var(--mute);stroke-width:1.3}
+.net .sat.al{stroke:var(--neon)}
+.net .pg{fill:none;stroke:var(--neon);stroke-width:1.2;transform-box:fill-box;transform-origin:center;animation:pulse 3.6s ease-out infinite}
+.net .core{fill:rgba(0,255,122,.07);stroke:var(--neon);stroke-width:1.6}
+.net .lbl{font:400 9.5px var(--f-mono);letter-spacing:.14em;fill:var(--dim);text-transform:uppercase}
+.chips{position:absolute;left:14px;right:14px;bottom:14px;display:flex;flex-wrap:wrap;gap:.5rem}
+.chips li{font:500 .64rem var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mute);padding:.45rem .7rem;border:1px solid var(--line-2);border-radius:999px;background:rgba(5,7,8,.7);backdrop-filter:blur(6px)}
+.chips li b{color:var(--neon);font-weight:500;margin-right:.45rem}
+
+/* VISÃO */
+.vision{padding-block:clamp(90px,12vw,170px);border-top:1px solid var(--line);background:radial-gradient(ellipse 60% 50% at 50% 40%,rgba(0,255,122,.05),transparent 70%)}
+.vision .top{display:flex;flex-direction:column;gap:1.4rem;max-width:860px;margin-bottom:clamp(24px,4vw,50px)}
+.vision .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.9fr);gap:clamp(30px,6vw,90px);align-items:center}
+.ringv{position:relative;width:100%;max-width:560px;aspect-ratio:1;margin-inline:auto}
+.ringv svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.ringv .poly{fill:rgba(0,255,122,.025);stroke:var(--line-2);stroke-width:1}
+.ringv .star{fill:none;stroke:var(--line);stroke-width:1}
+.ringv .seg{stroke:var(--line-2);stroke-width:1.2;transition:stroke .5s}
+.ringv .seg.on{stroke:var(--neon);stroke-dasharray:6 8;animation:dash 1.6s linear infinite}
+.ringv .nd circle.o{fill:var(--ink-0);stroke:var(--mute);stroke-width:1.4;transition:all .5s var(--ease)}
+.ringv .nd.on circle.o{stroke:var(--neon);fill:rgba(0,255,122,.18);filter:drop-shadow(0 0 8px rgba(0,255,122,.7))}
+.ringv .nd{cursor:pointer}
+.ringv .nm{position:absolute;transform:translate(-50%,-50%);font:700 .78rem/1 var(--f-display);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);white-space:nowrap;pointer-events:none;transition:color .4s}
+.ringv .nm.on{color:var(--ice)}
+.ringv .cen{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;gap:.5rem;text-align:center;pointer-events:none}
+.ringv .cen svg{position:static;width:52px;height:52px}
+.ringv .cen span{font:500 .6rem var(--f-mono);letter-spacing:.3em;color:var(--dim)}
+.vlist{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+.vlist li{border-bottom:1px solid var(--line)}
+.vlist button{width:100%;text-align:left;background:none;border:0;cursor:pointer;display:grid;grid-template-columns:auto 1fr;gap:.2rem 1.2rem;padding:1.1rem 0}
+.vlist .nn{grid-row:span 2;font:500 .75rem var(--f-mono);color:var(--dim);padding-top:.35rem;transition:color .3s}
+.vlist .tt{font:700 1.25rem/1.2 var(--f-display);letter-spacing:-.01em;color:var(--mute);transition:color .3s}
+.vlist .ds{color:var(--mute);font-size:.98rem;max-height:0;overflow:hidden;opacity:0;transition:max-height .6s var(--ease),opacity .5s}
+.vlist li.on .tt{color:var(--ice)}.vlist li.on .nn{color:var(--neon)}
+.vlist li.on .ds{max-height:6em;opacity:1}
+
+/* DIFERENCIAL */
+.diff{padding-block:clamp(90px,12vw,170px);border-top:1px solid var(--line)}
+.diff .grid{display:grid;grid-template-columns:4fr 8fr;gap:clamp(30px,6vw,100px);align-items:start}
+.diff .stick{position:sticky;top:120px;display:flex;flex-direction:column;gap:1.4rem}
+.pil li{position:relative;display:grid;grid-template-columns:auto 1fr;gap:.4rem clamp(1.2rem,3vw,3rem);align-items:center;padding:clamp(1.4rem,2.6vw,2.4rem) 0;border-top:1px solid var(--line);overflow:hidden;transition:padding .5s var(--ease)}
+.pil li:last-child{border-bottom:1px solid var(--line)}
+.pil li::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--neon-a),transparent 60%);transform:translateX(-101%);transition:transform .7s var(--ease);z-index:-1}
+.pil li::after{content:"";position:absolute;left:0;bottom:-1px;height:1px;width:100%;background:var(--neon);transform:scaleX(0);transform-origin:0 50%;transition:transform .8s var(--ease)}
+.pil li:hover{padding-left:1.2rem}
+.pil li:hover::before{transform:none}
+.pil li:hover::after{transform:none}
+.pil .nb{grid-row:span 2;font:800 clamp(3.4rem,8vw,7rem)/.85 var(--f-display);letter-spacing:-.05em;color:transparent;-webkit-text-stroke:1.2px rgba(229,231,235,.3);transition:all .5s var(--ease)}
+.pil li:hover .nb{color:var(--neon);-webkit-text-stroke-color:var(--neon)}
+.pil h3{font:700 clamp(1.1rem,2vw,1.55rem)/1.1 var(--f-display);letter-spacing:.14em;align-self:end}
+.pil p{color:var(--mute);align-self:start;max-width:46ch}
+
+/* PROJETOS */
+.work{padding-block:clamp(90px,12vw,170px);border-top:1px solid var(--line);background:linear-gradient(180deg,var(--ink-1),var(--ink-0))}
+.work .top{display:flex;flex-direction:column;gap:1.4rem;max-width:880px;margin-bottom:clamp(40px,6vw,80px)}
+.pgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,2.4vw,36px)}
+.proj{display:flex;flex-direction:column;gap:1.2rem;min-width:0;outline-offset:6px}
+.stage{position:relative;aspect-ratio:1.18;border-radius:16px;border:1px solid var(--line);background:radial-gradient(circle at 30% 20%,color-mix(in srgb,var(--ac) 22%,transparent),transparent 60%),var(--ink-1);overflow:hidden;transition:border-color .4s,box-shadow .5s var(--ease)}
+.proj:hover .stage,.proj:focus-visible .stage{border-color:var(--neon-b);box-shadow:0 30px 80px -30px rgba(0,255,122,.25)}
+.desk{position:absolute;left:7%;top:11%;width:80%;container-type:inline-size;border-radius:8px;overflow:hidden;background:var(--bg);border:1px solid rgba(255,255,255,.12);box-shadow:0 30px 60px -20px rgba(0,0,0,.7);transform:perspective(1200px) rotateY(6deg) rotateX(2deg);transition:transform .9s var(--ease)}
+.proj:hover .desk,.proj:focus-visible .desk{transform:perspective(1200px) rotateY(0) rotateX(0) translateY(-4px)}
+.desk .bar{display:flex;align-items:center;gap:.9cqw;padding:2cqw 2.4cqw;background:#15191c;border-bottom:1px solid rgba(255,255,255,.06)}
+.desk .bar i{width:1.7cqw;height:1.7cqw;border-radius:50%;background:#2c353b}
+.desk .bar span{margin-left:2cqw;font:400 1.9cqw var(--f-mono);color:#6b7880;background:#0b0f12;padding:.7cqw 2.6cqw;border-radius:1cqw}
+.scr{height:46cqw;overflow:hidden;background:var(--bg);color:var(--fg);position:relative}
+.pg{font-family:var(--ff);transition:transform 4.5s cubic-bezier(.45,.05,.25,1)}
+.proj:hover .pg,.proj:focus-visible .pg{transform:translateY(-34%)}
+.pn{display:flex;align-items:center;gap:3cqw;padding:2.6cqw 4cqw;font-size:1.9cqw}
+.pn b{font-size:2.5cqw;letter-spacing:.04em;margin-right:auto;color:var(--ac)}
+.pn span{opacity:.7}
+.ph{padding:5cqw 4cqw 6cqw;display:flex;flex-direction:column;gap:1.8cqw;position:relative}
+.ph small{font:500 1.6cqw var(--f-mono);letter-spacing:.2em;color:var(--ac)}
+.ph h4{font-size:6.2cqw;line-height:1.02;font-weight:700;max-width:16ch}
+.ph p{font-size:2cqw;opacity:.7;max-width:34ch;line-height:1.5}
+.ph u{align-self:flex-start;text-decoration:none;background:var(--ac);color:var(--bg);font-weight:700;font-size:1.9cqw;padding:1.3cqw 2.8cqw;border-radius:99cqw;margin-top:1cqw}
+.ph .art{position:absolute;right:4cqw;top:3cqw;width:30cqw;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--ac),transparent 62%),radial-gradient(circle,rgba(255,255,255,.12),transparent 70%);opacity:.9}
+.f3{display:grid;grid-template-columns:repeat(3,1fr);gap:2cqw;padding:2cqw 4cqw 4cqw}
+.f3 div{aspect-ratio:1.25;border-radius:1.4cqw;background:linear-gradient(145deg,color-mix(in srgb,var(--ac) 28%,var(--bg)),color-mix(in srgb,var(--fg) 6%,var(--bg)));padding:1.6cqw;display:flex;align-items:flex-end;font-size:1.8cqw;font-weight:600}
+.pf{padding:4cqw;border-top:1px solid color-mix(in srgb,var(--fg) 12%,transparent);font-size:1.7cqw;opacity:.6;display:flex;justify-content:space-between}
+.v-bar .ph .art{border-radius:0;width:26cqw;aspect-ratio:.8;right:5cqw;top:2cqw;background:linear-gradient(160deg,var(--ac),transparent 70%);clip-path:polygon(18% 0,100% 0,82% 100%,0 100%)}
+.v-tec .ph .art{border-radius:2cqw;background:linear-gradient(135deg,var(--ac),transparent),repeating-linear-gradient(0deg,rgba(255,255,255,.18) 0 1px,transparent 1px 3cqw),repeating-linear-gradient(90deg,rgba(255,255,255,.18) 0 1px,transparent 1px 3cqw);opacity:.75}
+.phone{position:absolute;right:6%;bottom:7%;width:25%;container-type:inline-size;aspect-ratio:.5;border-radius:14px;border:3px solid #1c2429;background:var(--bg);color:var(--fg);overflow:hidden;box-shadow:0 30px 50px -15px rgba(0,0,0,.8);transition:transform .9s var(--ease)}
+.proj:hover .phone,.proj:focus-visible .phone{transform:translateY(-12px) rotate(-2deg)}
+.phone .pp{font-family:var(--ff);padding:14cqw 9cqw;display:flex;flex-direction:column;gap:7cqw;height:100%}
+.phone .pp b{font-size:11cqw;color:var(--ac)}
+.phone .pp h5{margin:0;font-size:12.5cqw;line-height:1.08;font-weight:700;overflow-wrap:anywhere}
+.phone .pp i{display:block;height:20cqw;border-radius:6cqw;background:linear-gradient(145deg,color-mix(in srgb,var(--ac) 30%,var(--bg)),color-mix(in srgb,var(--fg) 6%,var(--bg)))}
+.phone .pp u{align-self:flex-start;text-decoration:none;font-size:10cqw;font-weight:700;background:var(--ac);color:var(--bg);padding:5cqw 9cqw;border-radius:99cqw}
+.proj figcaption{display:flex;flex-direction:column;gap:.6rem}
+.pt{align-self:flex-start;width:max-content;font:500 .66rem/1 var(--f-mono);letter-spacing:.2em;color:var(--neon);padding:.4rem .6rem;border:1px dashed var(--neon-b);border-radius:6px}
+.proj h3{font:700 1.4rem/1.15 var(--f-display);letter-spacing:-.01em}
+.proj p.ds{color:var(--mute);font-size:.97rem}
+.proj .st{display:flex;flex-wrap:wrap;gap:.4rem}
+.proj .st li{font:400 .68rem var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--dim);padding:.3rem .55rem;border:1px solid var(--line);border-radius:5px}
+.proj.next{grid-column:1/-1;flex-direction:row;align-items:center;gap:clamp(1.2rem,3vw,2.6rem);padding:clamp(1.2rem,2.4vw,2rem);border:1px dashed var(--line-2);border-radius:16px;background:radial-gradient(ellipse 50% 120% at 0 50%,rgba(0,255,122,.07),transparent 70%);transition:border-color .3s}
+.proj.next:hover{border-color:var(--neon-b)}
+.proj.next .stage{flex:none;width:96px;aspect-ratio:1;display:grid;place-items:center;border:0;background:none;overflow:visible}
+.proj.next>div:last-child{min-width:0}
+.proj.next .plus{width:84px;height:84px;border-radius:50%;border:1px solid var(--neon-b);display:grid;place-items:center;color:var(--neon);transition:transform .6s var(--ease),background .3s}
+.proj.next:hover .plus{transform:rotate(90deg) scale(1.08);background:var(--neon-a)}
+.note{margin-top:2.4rem;font:400 .75rem/1.7 var(--f-mono);letter-spacing:.06em;color:var(--dim);max-width:78ch}
+
+/* RELATÓRIOS SECURAVEX */
+.rep-sec{--sev-a:#ff6b5e;--sev-m:#ffb84d;--sev-b:#6ea8ff;padding-block:clamp(90px,12vw,170px);border-top:1px solid var(--line);background:radial-gradient(ellipse 60% 40% at 80% 0,rgba(32,42,48,.7),transparent 70%),var(--ink-0)}
+.rep-sec .top{display:flex;flex-direction:column;gap:1.4rem;max-width:880px;margin-bottom:clamp(36px,5vw,64px)}
+.method{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;border-top:1px solid var(--line-2);margin-bottom:1.4rem}
+.method li{position:relative;padding:1.4rem 1.1rem 0 0;display:flex;flex-direction:column;gap:.5rem}
+.method li::before{content:"";position:absolute;left:0;top:-4px;width:7px;height:7px;background:var(--neon);transform:rotate(45deg);box-shadow:0 0 10px var(--neon-b)}
+.method b{font:500 .68rem var(--f-mono);letter-spacing:.16em;color:var(--neon)}
+.method h3{font:700 1rem/1.2 var(--f-display);letter-spacing:-.005em}
+.method p{font-size:.88rem;line-height:1.5;color:var(--mute)}
+.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem;margin-bottom:clamp(36px,5vw,60px);padding-top:1.2rem}
+.toolbar>span{font:500 .68rem var(--f-mono);letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin-right:.8rem}
+.toolbar li{font:500 .74rem var(--f-mono);letter-spacing:.06em;color:var(--ice);padding:.5rem .8rem;border:1px solid var(--line-2);border-radius:999px;background:rgba(229,231,235,.03);transition:border-color .3s,color .3s}
+.toolbar li:hover{border-color:var(--neon-b);color:var(--neon)}
+.rgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,2.4vw,36px);align-items:start}
+.doc{min-width:0;border:1px solid var(--line-2);border-radius:16px;background:linear-gradient(180deg,rgba(32,42,48,.5),rgba(11,15,18,.95) 40%);overflow:hidden;box-shadow:0 40px 90px -50px rgba(0,255,122,.18);transition:border-color .4s,box-shadow .5s var(--ease)}
+.doc:hover{border-color:var(--neon-b)}
+.doc .dh{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;padding:.9rem 1.3rem;border-bottom:1px solid var(--line);font:400 .68rem var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.doc .dh em{font-style:normal;color:var(--neon);border:1px dashed var(--neon-b);padding:.3rem .5rem;border-radius:5px;letter-spacing:.18em}
+.doc .db{padding:1.5rem 1.3rem 1.2rem;display:flex;flex-direction:column;gap:1.3rem}
+.doc h3{font:800 clamp(1.5rem,2.4vw,2rem)/1.05 var(--f-display);letter-spacing:-.03em}
+.doc h3 small{display:block;margin-top:.5rem;font:500 .95rem/1.4 var(--f-body);letter-spacing:0;color:var(--mute)}
+.dl{display:grid;grid-template-columns:auto 1fr;gap:.45rem 1.2rem;font-size:.9rem;margin:0}
+.dl dt{font:500 .66rem var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim);padding-top:.25rem}
+.dl dd{margin:0;color:var(--ice);min-width:0;overflow-wrap:anywhere}
+.sev{display:flex;flex-direction:column;gap:.7rem}
+.sevbar{display:flex;height:10px;border-radius:5px;overflow:hidden;gap:2px;background:var(--line)}
+.sevbar i{display:block;transform-origin:0 50%;transform:scaleX(0);transition:transform 1.1s var(--ease)}
+.doc.in .sevbar i{transform:none}
+.sevbar .a,.pill.a::before,.lg .a::before{background:var(--sev-a)}.sevbar .m,.pill.m::before,.lg .m::before{background:var(--sev-m)}.sevbar .b,.pill.b::before,.lg .b::before{background:var(--sev-b)}
+.lg{display:flex;flex-wrap:wrap;gap:.4rem 1.2rem;font:400 .72rem var(--f-mono);letter-spacing:.08em;color:var(--mute)}
+.lg span{display:inline-flex;align-items:center;gap:.45rem}
+.lg span::before{content:"";width:8px;height:8px;border-radius:2px}
+.lg b{color:var(--ice);font-weight:500}
+.fl{border-top:1px solid var(--line)}
+.fl li{border-bottom:1px solid var(--line)}
+.fl>li>button{width:100%;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:.4rem .9rem;text-align:left;background:none;border:0;cursor:pointer;padding:.95rem 0;transition:background .3s}
+.fl .id{font:500 .68rem var(--f-mono);letter-spacing:.1em;color:var(--dim)}
+.fl .tt{font-weight:600;font-size:.96rem;line-height:1.3;color:var(--ice)}
+.pill{display:inline-flex;align-items:center;gap:.45rem;font:500 .66rem var(--f-mono);letter-spacing:.1em;text-transform:uppercase;padding:.3rem .55rem;border:1px solid var(--line-2);border-radius:999px;white-space:nowrap}
+.pill::before{content:"";width:7px;height:7px;border-radius:50%}
+.pill.a{color:var(--sev-a)}.pill.m{color:var(--sev-m)}.pill.b{color:var(--sev-b)}
+.fl .fpn{max-height:0;overflow:hidden;opacity:0;transition:max-height .7s var(--ease),opacity .5s}
+.fl li.on .fpn{max-height:34rem;opacity:1}
+.fl .pi{display:flex;flex-direction:column;gap:.9rem;padding:0 0 1.2rem;font-size:.92rem;line-height:1.55;color:var(--mute)}
+.fl .pi h4{font:500 .64rem var(--f-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--neon);margin-bottom:.15rem}
+.fl .pi p{max-width:60ch}
+.fl .pi .meta{display:flex;flex-wrap:wrap;gap:.4rem .6rem;font:400 .7rem var(--f-mono);letter-spacing:.04em;color:var(--dim)}
+.fl .pi .meta span{padding:.28rem .5rem;border:1px solid var(--line);border-radius:5px}
+.fl>li>button:hover .tt{color:var(--neon)}
+.fl .cv{font:500 .7rem var(--f-mono);color:var(--mute)}
+.fl li.on>button .tt{color:var(--neon)}
+.doc .df{padding:1rem 1.3rem;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:.4rem;align-items:center;font:500 .64rem var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.doc .df span.l{margin-right:.4rem}
+.doc .df li{font:400 .7rem var(--f-mono);letter-spacing:.04em;text-transform:none;color:var(--mute);padding:.28rem .55rem;border:1px solid var(--line);border-radius:5px}
+.rep-note{margin-top:2.4rem;font:400 .75rem/1.7 var(--f-mono);letter-spacing:.06em;color:var(--dim);max-width:86ch}
+
+/* CTA */
+.cta{position:relative;padding-block:clamp(100px,14vw,200px);border-top:1px solid var(--line);overflow:hidden;isolation:isolate;text-align:center}
+.cta .rings{position:absolute;left:50%;top:50%;width:min(1100px,150vw);aspect-ratio:1;transform:translate(-50%,-50%);z-index:-1;pointer-events:none}
+.cta .rings i{position:absolute;inset:0;border-radius:50%;border:1px solid var(--line);animation:breathe 8s ease-in-out infinite}
+.cta .rings i:nth-child(2){inset:14%;animation-delay:-2s;border-color:var(--line-2)}
+.cta .rings i:nth-child(3){inset:28%;animation-delay:-4s;border-color:var(--neon-b);border-style:dashed}
+.cta .rings i:nth-child(4){inset:42%;background:radial-gradient(circle,rgba(0,255,122,.16),transparent 70%);border:0;animation-delay:-6s}
+@keyframes breathe{50%{transform:scale(1.04);opacity:.55}}
+.cta .wrap{display:flex;flex-direction:column;align-items:center;gap:1.8rem}
+.cta h2{font:800 clamp(2.4rem,7vw,6rem)/.98 var(--f-display);letter-spacing:-.04em;max-width:15ch;text-wrap:balance}
+.cta h2 em{font-style:normal;color:var(--neon)}
+.cta .lead{max-width:48ch}
+.cta .cta-row{justify-content:center}
+
+/* FOOTER */
+.foot{position:relative;border-top:1px solid var(--line);background:var(--ink-1);overflow:hidden;padding-top:clamp(60px,8vw,110px)}
+.foot .cols{display:grid;grid-template-columns:1.6fr repeat(4,1fr);gap:clamp(28px,4vw,60px)}
+.foot .sl{margin-top:1.2rem;color:var(--mute);max-width:26ch}
+.foot h4{font:500 .7rem var(--f-mono);letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin-bottom:1.1rem}
+.foot li{margin-bottom:.6rem}
+.foot li a{color:var(--ice);font-size:.98rem;transition:color .2s,padding .3s var(--ease)}
+.foot li a:hover{color:var(--neon);padding-left:.35rem}
+.foot .num{display:block;margin-top:.8rem;font:400 .85rem var(--f-mono);color:var(--mute);user-select:all}
+.foot .big{margin-top:clamp(40px,6vw,80px);font:800 clamp(4.2rem,21.5vw,21rem)/.78 var(--f-display);letter-spacing:-.06em;text-align:center;color:transparent;-webkit-text-stroke:1px rgba(229,231,235,.1);user-select:none;white-space:nowrap;margin-bottom:-.06em;transition:-webkit-text-stroke-color .6s}
+.foot .big:hover{-webkit-text-stroke-color:var(--neon-b)}
+.foot .bt{position:relative;z-index:1;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem;padding-block:1.4rem 1.6rem;border-top:1px solid var(--line);background:var(--ink-1);font:400 .74rem var(--f-mono);letter-spacing:.08em;color:var(--dim)}
+
+/* WhatsApp flutuante */
+.wa{position:fixed;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:95;display:flex;align-items:center;gap:.7rem;height:58px;padding:0 18px 0 16px;border-radius:999px;background:var(--neon);color:var(--ink-0);font:700 .88rem var(--f-body);box-shadow:0 12px 40px -8px rgba(0,255,122,.55);transform:translateY(120px);opacity:0;transition:transform .7s var(--ease),opacity .5s,box-shadow .3s}
+.wa.show{transform:none;opacity:1}
+.wa:hover{box-shadow:0 12px 50px -4px rgba(0,255,122,.8),0 0 0 6px var(--neon-a)}
+.wa svg{width:26px;height:26px;flex:none}
+.wa span{max-width:0;overflow:hidden;white-space:nowrap;transition:max-width .5s var(--ease)}
+.wa:hover span,.wa:focus-visible span{max-width:160px}
+.wa::after{content:"";position:absolute;inset:0;border-radius:inherit;border:2px solid var(--neon);animation:ping 2.6s ease-out infinite;pointer-events:none}
+@keyframes ping{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.5);opacity:0}}
+
+/* RESPONSIVO */
+@media (max-width:1100px){
+  .dots{display:none}
+  .hero-art{right:-14%;width:min(640px,78vw);opacity:.85}
+  .foot .cols{grid-template-columns:1fr 1fr 1fr}
+  .foot .cols>div:first-child{grid-column:1/-1}
+}
+@media (max-width:980px){
+  .menu{display:none}.burger{display:block}
+  .about .grid,.brand .grid,.b-sec .grid,.vision .grid,.diff .grid{grid-template-columns:minmax(0,1fr)}
+  .b-sec .vis{order:0}
+  .diff .stick{position:static}
+  .pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ringv .nm{display:none}
+}
+@media (max-width:720px){
+  .nav .in{height:68px}
+  .hero{padding-block:104px 56px;flex-direction:column;align-items:stretch;min-height:0}
+  .hero .wrap{order:1}
+  .hero-art{order:2;position:relative;right:auto;top:auto;transform:none;width:min(108%,500px);align-self:flex-end;margin:28px -4% -10px 0;opacity:1}
+  .hud{order:3;position:relative;bottom:auto;margin-top:16px}
+  .hud ul{gap:1.4rem}
+  .cue{display:none}
+  .ide .bd{grid-template-columns:1fr}
+  .code{border-right:0;border-bottom:1px solid var(--line);min-height:210px}
+  .prev{min-height:210px}
+  .devs{right:-6px;bottom:-26px;transform:scale(.8);transform-origin:100% 100%}
+  .pgrid{grid-template-columns:minmax(0,1fr)}
+  .foot .cols{grid-template-columns:1fr 1fr}
+  .wa{height:54px;padding:0 15px}
+  .wa span{display:none}
+  .chips li:nth-child(n+3){display:none}
+}
+@media (max-width:1100px){.method{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:1.6rem}.rgrid{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:720px){.method{grid-template-columns:repeat(2,minmax(0,1fr))}.fl>li>button{grid-template-columns:auto minmax(0,1fr)}.fl .pill{grid-column:2;justify-self:start}.dl{grid-template-columns:minmax(0,1fr);gap:.1rem}.dl dd{margin-bottom:.5rem}}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important;transition-delay:0s!important}
+  .js .rv,.js .hero .fx{opacity:1;transform:none}
+  .js .hl .w>span{transform:none}
+  #loader{display:none}
+}
+</style>
+
+<script>document.documentElement.classList.add("js")</script>
+
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+<div id="loader" aria-hidden="true"><div class="lw">
+  <svg viewBox="0 0 64 64" fill="none"><path class="hx" d="M32 4 56 18v28L32 60 8 46V18z" stroke="#00FF7A" stroke-width="2.4"/><path class="vv" d="M20 24l12 22 12-22" stroke="#E5E7EB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <div class="nm">VEXORA</div><div class="bar"></div>
+</div></div>
+<div id="prog" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="wrap in">
+    <a class="logo" href="#inicio" aria-label="VEXORA, início" data-go>
+      <svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path class="hx" d="M32 4 56 18v28L32 60 8 46V18z" stroke="#00FF7A" stroke-width="3"/><path d="M20 24l12 22 12-22" stroke="#E5E7EB" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      VEXORA
+    </a>
+    <nav class="menu" aria-label="Principal">
+      <a class="lk" href="#sobre" data-go>Sobre</a>
+      <a class="lk" href="#ecossistema" data-go>Ecossistema</a>
+      <a class="lk" href="#visao" data-go>Visão</a>
+      <a class="lk" href="#projetos" data-go>Projetos</a>
+      <a class="lk" href="#contato" data-go>Contato</a>
+      <a class="btn sm" data-wa="main" href="https://wa.me/5581987930394?text=Ol%C3%A1%21%20Conheci%20a%20VEXORA%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20de%20voc%C3%AAs." target="_blank" rel="noopener noreferrer">Fale conosco <svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="sheet"><i></i><i></i><i></i></button>
+  </div>
+</header>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Menu" aria-hidden="true">
+  <a class="sl" style="--i:0" href="#inicio" data-go><small>01</small>Início</a>
+  <a class="sl" style="--i:1" href="#sobre" data-go><small>02</small>Sobre</a>
+  <a class="sl" style="--i:2" href="#ecossistema" data-go><small>03</small>Ecossistema</a>
+  <a class="sl" style="--i:3" href="#projetos" data-go><small>04</small>Projetos</a>
+  <a class="sl" style="--i:4" href="#contato" data-go><small>05</small>Contato</a>
+  <a class="btn pri" style="--i:5" data-wa="main" href="https://wa.me/5581987930394?text=Ol%C3%A1%21%20Conheci%20a%20VEXORA%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20de%20voc%C3%AAs." target="_blank" rel="noopener noreferrer">Fale com a VEXORA</a>
+</div>
+
+<nav class="dots" id="dots" aria-label="Seções da página">
+  <a href="#inicio" data-go data-s="inicio" aria-label="Início"><span>Início</span></a>
+  <a href="#sobre" data-go data-s="sobre" aria-label="Sobre"><span>Sobre</span></a>
+  <a href="#ecossistema" data-go data-s="ecossistema" aria-label="Ecossistema"><span>Ecossistema</span></a>
+  <a href="#visao" data-go data-s="visao" aria-label="Visão"><span>Visão</span></a>
+  <a href="#diferencial" data-go data-s="diferencial" aria-label="Diferencial"><span>Diferencial</span></a>
+  <a href="#projetos" data-go data-s="projetos" aria-label="Projetos"><span>Projetos</span></a>
+  <a href="#relatorios" data-go data-s="relatorios" aria-label="Relatórios"><span>Relatórios</span></a>
+  <a href="#contato" data-go data-s="contato" aria-label="Contato"><span>Contato</span></a>
+</nav>
+
+<main id="conteudo">
+
+<!-- 01 HERO -->
+<section class="hero" id="inicio" data-sec>
+  <div class="gridbg" aria-hidden="true"></div>
+  <div class="glow" aria-hidden="true"></div>
+  <div class="hero-art" id="heroArt" aria-hidden="true"><canvas id="heroCv"></canvas></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="tag fx" style="--i:0"><i></i>Digital Technology Group</span>
+      <h1 class="hl" aria-label="Construímos o futuro digital dos negócios.">
+        <span class="ln" aria-hidden="true"><span class="w"><span style="--i:0">Construímos</span></span> <span class="w"><span style="--i:1">o</span></span></span>
+        <span class="ln g" aria-hidden="true"><span class="w"><span style="--i:2">futuro</span></span> <span class="w"><span style="--i:3">digital</span></span></span>
+        <span class="ln" aria-hidden="true"><span class="w"><span style="--i:4">dos</span></span> <span class="w"><span style="--i:5">negócios.</span></span></span>
+      </h1>
+      <p class="lead fx" style="--i:1">Desenvolvimento web e segurança digital unidos por tecnologia, estratégia e inovação.</p>
+      <div class="cta-row fx" style="--i:2">
+        <a class="btn pri" href="#ecossistema" data-go data-mag>Conheça nossas soluções <svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v10M3.5 8.5 8 13l4.5-4.5"/></svg></a>
+        <a class="btn" data-wa="main" data-mag href="https://wa.me/5581987930394?text=Ol%C3%A1%21%20Conheci%20a%20VEXORA%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20de%20voc%C3%AAs." target="_blank" rel="noopener noreferrer">Fale com a VEXORA <svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="hud fx" style="--i:4" aria-hidden="true"><div class="wrap">
+    <ul><li><b>WEBVEX</b>Desenvolvimento web</li><li><b>SECURAVEX</b>Segurança digital</li></ul>
+    <div class="cue"><i></i>Role</div>
+  </div></div>
+</section>
+
+<!-- 02 SOBRE -->
+<section class="about" id="sobre" data-sec>
+  <div class="wrap grid">
+    <div class="copy">
+      <span class="eyebrow rv">Sobre a VEXORA</span>
+      <h2 class="h2 rv" style="--d:.05s">Mais que tecnologia. <em>Uma visão.</em></h2>
+      <p class="lead rv" style="--d:.1s">A VEXORA conecta tecnologia, desenvolvimento e segurança digital por meio de marcas especializadas. Nosso propósito é transformar necessidades reais em soluções digitais inteligentes, funcionais e preparadas para o futuro.</p>
+      <ul class="caps rv" style="--d:.15s"><li>Desenvolvimento</li><li>Segurança</li><li>Estratégia</li><li>Evolução</li></ul>
+    </div>
+    <div class="orbit rv" style="--d:.1s" role="img" aria-label="Diagrama do ecossistema: a VEXORA no centro, conectada às marcas WEBVEX e SECURAVEX.">
+      <svg viewBox="0 0 520 520" fill="none">
+        <defs>
+          <path id="rp" d="M260 260m-232 0a232 232 0 1 1 464 0a232 232 0 1 1-464 0"/>
+          <radialGradient id="cg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#00FF7A" stop-opacity=".25"/><stop offset="1" stop-color="#00FF7A" stop-opacity="0"/></radialGradient>
+        </defs>
+        <circle cx="260" cy="260" r="250" fill="url(#cg)"/>
+        <g class="spin"><circle cx="260" cy="260" r="250" stroke="rgba(229,231,235,.12)" stroke-dasharray="1 9"/><text class="ring"><textPath href="#rp" startOffset="0">VEXORA · DIGITAL TECHNOLOGY GROUP · TECNOLOGIA QUE TRANSFORMA NEGÓCIOS · </textPath></text></g>
+        <g class="spin r"><circle cx="260" cy="260" r="170" stroke="rgba(229,231,235,.16)"/></g>
+        <circle cx="260" cy="260" r="110" stroke="rgba(229,231,235,.1)"/>
+        <line class="lnk" x1="260" y1="260" x2="116" y2="128"/>
+        <line class="lnk" x1="260" y1="260" x2="404" y2="392" style="animation-delay:-1.2s"/>
+        <g class="nd" transform="translate(116 128)"><circle class="pulse" r="16" fill="none" stroke="#00FF7A"/><circle r="9" fill="#050708" stroke="#00FF7A" stroke-width="2"/><text x="-18" y="-24" text-anchor="start" transform="translate(-4 0)">WEBVEX</text></g>
+        <g class="nd" transform="translate(404 392)"><circle class="pulse" r="16" fill="none" stroke="#00FF7A" style="animation-delay:-1.6s"/><circle r="9" fill="#050708" stroke="#00FF7A" stroke-width="2"/><text x="14" y="30" text-anchor="end" transform="translate(-14 0)">SECURAVEX</text></g>
+        <g transform="translate(260 260)"><circle r="52" fill="#0B0F12" stroke="#00FF7A" stroke-width="1.6"/><path d="M0-30 26-15v30L0 30-26 15v-30z" stroke="rgba(0,255,122,.4)" stroke-width="1"/><path d="M-13-8 0 14 13-8" stroke="#E5E7EB" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- 03 ECOSSISTEMA -->
+<section class="eco" id="ecossistema" data-sec>
+  <div class="wrap eco-head">
+    <span class="eyebrow rv">Nosso ecossistema</span>
+    <h2 class="h2 rv" style="--d:.05s">Duas marcas. <em>Uma só direção.</em></h2>
+    <p class="lead rv" style="--d:.1s">Cada marca tem sua especialidade e sua identidade. Juntas, cobrem a presença digital e a proteção do negócio.</p>
+  </div>
+
+  <!-- WEBVEX -->
+  <div class="brand b-web" id="webvex">
+    <div class="wm" aria-hidden="true">WEBVEX</div>
+    <div class="wrap grid">
+      <div class="info">
+        <span class="cat rv"><svg viewBox="0 0 34 34" fill="none" stroke="#00FF7A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="30" height="24" rx="3.5"/><path d="M2 11h30M13 17l-4 3 4 3M21 17l4 3-4 3"/></svg>Web Development</span>
+        <h3 class="rv" style="--d:.05s">WEBVEX</h3>
+        <p class="d rv" style="--d:.1s">Transformamos ideias e negócios em experiências digitais. Desenvolvemos sites modernos, funcionais e responsivos para empresas que querem fortalecer sua presença na internet.</p>
+        <ul class="svc rv" style="--d:.15s">
+          <li>Criação de sites institucionais</li><li>Landing pages</li><li>Desenvolvimento web</li><li>Design responsivo</li><li>Experiências digitais personalizadas</li>
+        </ul>
+        <div class="acts rv" style="--d:.2s">
+          <a class="btn pri" data-wa="web" data-mag href="https://wa.me/5581987930394?text=Ol%C3%A1%21%20Tenho%20interesse%20em%20desenvolver%20um%20site%20para%20meu%20neg%C3%B3cio." target="_blank" rel="noopener noreferrer">Conhecer a WEBVEX <svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></a>
+          <a class="tl" data-ig="web" href="https://www.instagram.com/webvex.digital/" target="_blank" rel="noopener noreferrer">Visitar Instagram ↗</a>
+        </div>
+      </div>
+      <div class="vis rv" style="--d:.1s" aria-hidden="true">
+        <div class="ide">
+          <div class="tb"><i></i><i></i><i></i><span>site.config</span></div>
+          <div class="bd">
+            <pre class="code" id="code"></pre>
+            <div class="prev"><div class="pb a"></div><div class="pb b"></div><div class="pb c"></div><div class="blk"><i></i><i></i><i></i></div></div>
+          </div>
+        </div>
+        <div class="devs"><i class="d1"></i><i class="d2"></i><i class="d3"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECURAVEX -->
+  <div class="brand b-sec" id="securavex">
+    <div class="wm" aria-hidden="true">SECURAVEX</div>
+    <div class="wrap grid">
+      <div class="vis rv" aria-hidden="true">
+        <div class="net">
+          <svg viewBox="0 0 600 444" fill="none">
+            <defs><linearGradient id="sw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00FF7A" stop-opacity="0"/><stop offset="1" stop-color="#00FF7A" stop-opacity=".32"/></linearGradient></defs>
+            <circle class="ring" cx="300" cy="222" r="80"/><circle class="ring" cx="300" cy="222" r="140"/><circle class="ring" cx="300" cy="222" r="200"/>
+            <g class="sweep"><path d="M300 222 300 22A200 200 0 0 1 441 81Z" fill="url(#sw)"/></g>
+            <g>
+              <line class="ed hot" x1="300" y1="222" x2="110" y2="92"/><line class="ed" x1="300" y1="222" x2="150" y2="332"/>
+              <line class="ed" x1="300" y1="222" x2="480" y2="76"/><line class="ed hot" x1="300" y1="222" x2="510" y2="300" style="animation-delay:-.8s"/>
+              <line class="ed" x1="300" y1="222" x2="300" y2="38"/><line class="ed" x1="300" y1="222" x2="320" y2="384"/>
+              <line class="ed" x1="110" y1="92" x2="300" y2="38"/><line class="ed" x1="480" y1="76" x2="300" y2="38"/><line class="ed" x1="150" y1="332" x2="320" y2="384"/><line class="ed" x1="510" y1="300" x2="320" y2="384"/>
+            </g>
+            <circle class="sat al" cx="110" cy="92" r="7"/><circle class="pg" cx="110" cy="92" r="7"/>
+            <circle class="sat" cx="150" cy="332" r="6"/><circle class="sat" cx="480" cy="76" r="6"/>
+            <circle class="sat al" cx="510" cy="300" r="7"/><circle class="pg" cx="510" cy="300" r="7" style="animation-delay:-1.8s"/>
+            <circle class="sat" cx="300" cy="38" r="6"/><circle class="sat" cx="320" cy="384" r="6"/>
+            <text class="lbl" x="124" y="76">Ambiente</text><text class="lbl" x="440" y="326">Risco</text>
+            <circle class="core" cx="300" cy="222" r="46"/>
+            <path d="M300 192 330 204v26c0 18-13 29-30 37-17-8-30-19-30-37v-26z" stroke="#00FF7A" stroke-width="2" stroke-linejoin="round"/><path d="m288 228 9 9 17-19" stroke="#E5E7EB" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <ul class="chips"><li><b>01</b>Análise</li><li><b>02</b>Risco</li><li><b>03</b>Documentação</li><li><b>04</b>Recomendação</li></ul>
+        </div>
+      </div>
+      <div class="info">
+        <span class="cat rv"><svg viewBox="0 0 34 34" fill="none" stroke="#00FF7A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 3 29 8v9c0 8-5.5 12.5-12 14C10.500 29.500 5 25 5 17V8z"/><path d="m11.500 17 4 4 7-8"/></svg>Cybersecurity</span>
+        <h3 class="rv" style="--d:.05s">SECURAVEX</h3>
+        <p class="d rv" style="--d:.1s">Segurança digital começa com conhecimento. A SECURAVEX trabalha com análise de segurança web, identificação de riscos e recomendações para fortalecer a proteção de ambientes digitais.</p>
+        <ul class="svc rv" style="--d:.15s">
+          <li>Análise de segurança web</li><li>Identificação de vulnerabilidades</li><li>Avaliação de riscos</li><li>Documentação técnica</li><li>Recomendações de segurança</li>
+        </ul>
+        <div class="acts rv" style="--d:.2s">
+          <a class="btn pri" data-wa="sec" data-mag href="https://wa.me/5581987930394?text=Ol%C3%A1%21%20Tenho%20interesse%20em%20conhecer%20os%20servi%C3%A7os%20de%20seguran%C3%A7a%20web%20da%20SECURAVEX." target="_blank" rel="noopener noreferrer">Conhecer a SECURAVEX <svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></a>
+          <a class="tl" data-ig="sec" href="https://www.instagram.com/securavex/" target="_blank" rel="noopener noreferrer">Visitar Instagram ↗</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 VISÃO -->
+<section class="vision" id="visao" data-sec>
+  <div class="wrap">
+    <div class="top">
+      <span class="eyebrow rv">Nossa visão</span>
+      <h2 class="h2 rv" style="--d:.05s">Do desenvolvimento à segurança. <em>Pensamos no todo.</em></h2>
+      <p class="lead rv" style="--d:.1s">Presença digital e segurança precisam caminhar juntas. Um site bonito que não está protegido é um risco, e um ambiente seguro sem boa experiência não entrega valor.</p>
+    </div>
+    <div class="grid">
+      <div class="ringv rv" id="ringv" role="img" aria-label="Ciclo conectando desenvolvimento, experiência, tecnologia, segurança e evolução."></div>
+      <ul class="vlist rv" id="vlist" style="--d:.1s"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- 05 DIFERENCIAL -->
+<section class="diff" id="diferencial" data-sec>
+  <div class="wrap grid">
+    <div class="stick">
+      <span class="eyebrow rv">Nosso diferencial</span>
+      <h2 class="h2 rv" style="--d:.05s">Tecnologia <em>com propósito.</em></h2>
+      <p class="lead rv" style="--d:.1s">Quatro princípios guiam cada projeto, da primeira conversa à entrega.</p>
+    </div>
+    <ol class="pil">
+      <li class="rv"><span class="nb" aria-hidden="true">01</span><h3>EXPERIÊNCIA</h3><p>Criamos soluções pensando em quem realmente vai utilizá-las.</p></li>
+      <li class="rv"><span class="nb" aria-hidden="true">02</span><h3>INOVAÇÃO</h3><p>Exploramos tecnologias e abordagens modernas para resolver problemas reais.</p></li>
+      <li class="rv"><span class="nb" aria-hidden="true">03</span><h3>ESTRATÉGIA</h3><p>Cada solução precisa ter uma finalidade e gerar valor.</p></li>
+      <li class="rv"><span class="nb" aria-hidden="true">04</span><h3>EVOLUÇÃO</h3><p>Acreditamos que a tecnologia deve acompanhar o crescimento dos negócios.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 06 PROJETOS -->
+<section class="work" id="projetos" data-sec>
+  <div class="wrap">
+    <div class="top">
+      <span class="eyebrow rv">Vitrine WEBVEX</span>
+      <h2 class="h2 rv" style="--d:.05s">Projetos que transformam <em>ideias em experiências.</em></h2>
+      <p class="lead rv" style="--d:.1s">Três demonstrações de estilos diferentes de desenvolvimento. Passe o mouse ou foque em cada uma para ver a página rolando.</p>
+    </div>
+    <div class="pgrid" id="pgrid"></div>
+    <p class="note rv">Os três projetos acima são conceituais, criados para demonstrar o padrão de design e desenvolvimento da WEBVEX. Os nomes são fictícios. Para publicar um projeto real, edite a lista PROJECTS no início do script desta página.</p>
+  </div>
+</section>
+
+<!-- 06b RELATÓRIOS SECURAVEX -->
+<section class="rep-sec" id="relatorios" data-sec>
+  <div class="wrap">
+    <div class="top">
+      <span class="eyebrow rv">Vitrine SECURAVEX</span>
+      <h2 class="h2 rv" style="--d:.05s">Relatórios que transformam <em>riscos em decisões.</em></h2>
+      <p class="lead rv" style="--d:.1s">Dois exemplos do que a SECURAVEX entrega: achados classificados por gravidade, evidências, impacto, recomendação e as ferramentas usadas em cada verificação.</p>
+    </div>
+    <ol class="method rv" id="method" aria-label="Método de trabalho"></ol>
+    <ul class="toolbar rv" id="toolbar" aria-label="Ferramentas e referências"></ul>
+    <div class="rgrid" id="rgrid"></div>
+    <p class="rep-note rv">Os dois relatórios são exemplos fictícios. Alvos, achados e pontuações são ilustrativos e não descrevem clientes reais. Testes reais só acontecem com autorização por escrito do responsável pelo ambiente.</p>
+  </div>
+</section>
+
+<!-- 07 CTA -->
+<section class="cta" id="contato" data-sec>
+  <div class="rings" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="wrap">
+    <span class="eyebrow rv">Contato</span>
+    <h2 class="rv" style="--d:.05s">Seu próximo passo começa <em>no digital.</em></h2>
+    <p class="lead rv" style="--d:.1s">Seja para desenvolver uma presença digital ou fortalecer a segurança do seu negócio, estamos prontos para conversar.</p>
+    <div class="cta-row rv" style="--d:.15s">
+      <a class="btn pri" data-wa="main" data-mag href="https://wa.me/5581987930394?text=Ol%C3%A1%21%20Conheci%20a%20VEXORA%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20de%20voc%C3%AAs." target="_blank" rel="noopener noreferrer">Fale com a VEXORA <svg class="ar" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12 12 4M5.5 4H12v6.5"/></svg></a>
+      <a class="btn" href="#ecossistema" data-go data-mag>Conheça nossas marcas</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- 08 FOOTER -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="logo" href="#inicio" data-go aria-label="VEXORA, voltar ao início"><svg viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M32 4 56 18v28L32 60 8 46V18z" stroke="#00FF7A" stroke-width="3"/><path d="M20 24l12 22 12-22" stroke="#E5E7EB" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>VEXORA</a>
+        <p class="sl">Tecnologia que transforma negócios.</p>
+      </div>
+      <div><h4>Navegação</h4><ul>
+        <li><a href="#inicio" data-go>Início</a></li><li><a href="#sobre" data-go>Sobre</a></li><li><a href="#ecossistema" data-go>Ecossistema</a></li><li><a href="#projetos" data-go>Projetos</a></li><li><a href="#contato" data-go>Contato</a></li></ul></div>
+      <div><h4>Marcas</h4><ul>
+        <li><a href="#webvex" data-go>WEBVEX</a></li><li><a href="#securavex" data-go>SECURAVEX</a></li></ul></div>
+      <div><h4>Redes sociais</h4><ul>
+        <li><a data-ig="web" href="https://www.instagram.com/webvex.digital/" target="_blank" rel="noopener noreferrer">Instagram WEBVEX</a></li>
+        <li><a data-ig="sec" href="https://www.instagram.com/securavex/" target="_blank" rel="noopener noreferrer">Instagram SECURAVEX</a></li></ul></div>
+      <div><h4>Contato</h4><ul>
+        <li><a data-wa="main" href="https://wa.me/5581987930394?text=Ol%C3%A1%21%20Conheci%20a%20VEXORA%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20de%20voc%C3%AAs." target="_blank" rel="noopener noreferrer">WhatsApp</a></li></ul>
+        <span class="num">+55 81 98793-0394</span></div>
+    </div>
+    <div class="big" aria-hidden="true">VEXORA</div>
+  </div>
+  <div class="bt"><div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem">
+    <span>© <span id="yr">2026</span> VEXORA. Todos os direitos reservados.</span><span>WEBVEX · SECURAVEX</span></div></div>
+</footer>
+
+<a class="wa" id="wa" data-wa="main" href="https://wa.me/5581987930394?text=Ol%C3%A1%21%20Conheci%20a%20VEXORA%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20de%20voc%C3%AAs." target="_blank" rel="noopener noreferrer" aria-label="Conversar com a VEXORA no WhatsApp">
+  <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3.500A10.500 10.500 0 0 0 5 19.300L3.500 24.500l5.300-1.400A10.500 10.500 0 1 0 14 3.500z"/><path d="M10.200 9.800c.4 3.300 3.100 6 6.400 6.600l1.600-1.700-2.400-1.100-1 .9a5.400 5.400 0 0 1-2.500-2.500l.9-1-1.100-2.400z" fill="currentColor" stroke="none"/></svg>
+  <span>Fale conosco</span>
+</a>
+
+<script>
+/* ============================================================
+   CONFIGURAÇÃO. Edite aqui textos, links e projetos.
+   ============================================================ */
+var CONFIG = {
+  whatsapp: "5581987930394",
+  messages: {
+    main: "Olá! Conheci a VEXORA pelo site e gostaria de saber mais sobre as soluções de vocês.",
+    web:  "Olá! Tenho interesse em desenvolver um site para meu negócio.",
+    sec:  "Olá! Tenho interesse em conhecer os serviços de segurança web da SECURAVEX."
+  },
+  instagram: { web: "https://www.instagram.com/webvex.digital/", sec: "https://www.instagram.com/securavex/" }
+};
+
+/* Vitrine. Para trocar uma demonstração por um projeto real, altere os campos
+   (title, desc, stack, tag) e, se tiver, preencha "url". Remova "tag" para
+   esconder o selo "PROJETO CONCEITUAL". */
+var PROJECTS = [
+  { variant:"v-res", tag:"PROJETO CONCEITUAL", title:"Restaurante premium", desc:"Site com cardápio, adega e reserva de mesa em uma atmosfera quente e editorial.",
+    stack:["Institucional","Reservas","Responsivo"], url:"",
+    brand:"Alma Brasa", host:"almabrasa.exemplo", kicker:"RESTAURANTE", headline:"Fogo, brasa e memória à mesa.", sub:"Menu de degustação, adega e reservas.", cta:"Reservar mesa",
+    items:["Cardápio","Adega","Eventos"], nav:["Menu","Adega","Reservas"],
+    theme:{ bg:"#15100c", fg:"#f4eadc", ac:"#e0a458", ff:"'Iowan Old Style','Palatino Linotype',Georgia,serif" } },
+  { variant:"v-bar", tag:"PROJETO CONCEITUAL", title:"Barbearia moderna", desc:"Identidade forte, tabela de serviços e agendamento direto em poucos toques.",
+    stack:["Landing page","Agendamento","Mobile first"], url:"",
+    brand:"Dom Navalha", host:"domnavalha.exemplo", kicker:"BARBEARIA", headline:"Corte reto. Barba afiada.", sub:"Serviços, equipe e agendamento online.", cta:"Agendar horário",
+    items:["Serviços","Equipe","Preços"], nav:["Serviços","Equipe","Agenda"],
+    theme:{ bg:"#0f0f11", fg:"#f2f2f2", ac:"#ff6b3d", ff:"'Syne','Trebuchet MS',sans-serif" } },
+  { variant:"v-tec", tag:"PROJETO CONCEITUAL", title:"Institucional de tecnologia", desc:"Site corporativo claro e objetivo, com foco em credibilidade e contato comercial.",
+    stack:["Institucional","Design system","Alta performance"], url:"",
+    brand:"Nuvem Quadrante", host:"nuvemquadrante.exemplo", kicker:"TECNOLOGIA", headline:"Infraestrutura que cresce com você.", sub:"Plataforma, segurança e suporte para sua operação.", cta:"Falar com especialista",
+    items:["Plataforma","Segurança","Parceiros"], nav:["Soluções","Sobre","Contato"],
+    theme:{ bg:"#f3f6f9", fg:"#0b1424", ac:"#2f6bff", ff:"'Manrope',system-ui,sans-serif" } }
+];
+
+var VISION = [
+  { t:"Desenvolvimento", d:"Interfaces e sistemas construídos com código limpo e arquitetura sustentável." },
+  { t:"Experiência",     d:"Navegação clara, desempenho e acessibilidade pensados para quem usa." },
+  { t:"Tecnologia",      d:"Ferramentas modernas escolhidas pelo que resolvem, não pela moda." },
+  { t:"Segurança",       d:"Riscos identificados e documentados antes de virarem problema." },
+  { t:"Evolução",        d:"Soluções que acompanham o crescimento e as mudanças do negócio." }
+];
+
+/* Vitrine SECURAVEX. Edite os relatórios de exemplo, o método e as ferramentas conforme a prática real da SECURAVEX. */
+var METHOD = [
+  { t:"Escopo e autorização", d:"Define alvos, limites e janela de testes com autorização por escrito." },
+  { t:"Reconhecimento", d:"Mapeia tecnologias, portas e superfície exposta sem afetar o ambiente." },
+  { t:"Varredura automatizada", d:"Ferramentas conhecidas apontam configurações fracas e componentes antigos." },
+  { t:"Validação manual", d:"Cada achado é confirmado à mão para descartar falsos positivos." },
+  { t:"Classificação", d:"Gravidade por CVSS 3.1 e categoria do OWASP Top 10 (2021)." },
+  { t:"Relatório e correção", d:"Evidência, impacto e passo a passo de correção em ordem de prioridade." }
+];
+var TOOLS = ["OWASP ZAP","Burp Suite","Nmap","Nikto","testssl.sh","Mozilla Observatory","Retire.js","dig (DNS)"];
+var REFS = ["OWASP WSTG","OWASP Top 10","CVSS 3.1","NVD"];
+var REPORTS = [
+  { id:"SVX-REL-EXEMPLO-01", title:"Análise de segurança web", sub:"Loja virtual (e-commerce)", target:"lojaexemplo.exemplo",
+    scope:"Site público e fluxo de compra, sem login", approach:"Caixa-preta, não invasiva, com autorização",
+    tools:["Mozilla Observatory","Burp Suite","Retire.js","Nikto","testssl.sh","Nmap"],
+    findings:[
+      { id:"SVX-01", t:"Biblioteca JavaScript desatualizada com vulnerabilidade conhecida", sev:"Alta", cvss:"7.5", cat:"A06:2021 Componentes vulneráveis e desatualizados",
+        ev:"Uma biblioteca de front-end está em versão antiga, com falha pública registrada no banco de CVEs.", imp:"A falha pode ser explorada por qualquer visitante, sem autenticação.",
+        rec:"Atualizar para a versão corrigida, fixar versões e incluir verificação de dependências no processo de publicação.", tool:"Retire.js e conferência no NVD" },
+      { id:"SVX-02", t:"Protocolos TLS antigos habilitados", sev:"Média", cvss:"5.9", cat:"A02:2021 Falhas criptográficas",
+        ev:"O servidor aceita TLS 1.0 e 1.1, além de suítes de cifra consideradas fracas.", imp:"Expõe a conexão a ataques de downgrade e à captura de dados em trânsito.",
+        rec:"Permitir somente TLS 1.2 e 1.3 com suítes de cifra modernas.", tool:"testssl.sh e Nmap (ssl-enum-ciphers)" },
+      { id:"SVX-03", t:"Cookie de sessão sem atributos de proteção", sev:"Média", cvss:"5.4", cat:"A07:2021 Falhas de identificação e autenticação",
+        ev:"O cookie de sessão é emitido sem Secure, HttpOnly e SameSite.", imp:"Aumenta a chance de roubo de sessão em caso de XSS ou de rede insegura.",
+        rec:"Definir Secure, HttpOnly e SameSite=Lax e regenerar o identificador de sessão após o login.", tool:"Burp Suite (Proxy) e DevTools do navegador" },
+      { id:"SVX-04", t:"Cabeçalhos de segurança ausentes", sev:"Média", cvss:"5.3", cat:"A05:2021 Configuração incorreta de segurança",
+        ev:"As respostas não enviam Content-Security-Policy, X-Frame-Options nem Strict-Transport-Security.", imp:"Facilita clickjacking e ataques de downgrade de conexão.",
+        rec:"Adicionar os cabeçalhos no servidor ou na CDN, começando por HSTS e por uma CSP em modo de relatório.", tool:"Mozilla Observatory e inspeção manual" },
+      { id:"SVX-05", t:"Versão do servidor exposta nos cabeçalhos", sev:"Baixa", cvss:"3.1", cat:"A05:2021 Configuração incorreta de segurança",
+        ev:"O cabeçalho Server informa o produto e a versão em uso.", imp:"Ajuda um atacante a escolher técnicas específicas para aquela versão.",
+        rec:"Ocultar a versão na configuração do servidor.", tool:"Nikto e curl -I" }
+    ] },
+  { id:"SVX-REL-EXEMPLO-02", title:"Avaliação de risco web", sub:"Site institucional com painel administrativo", target:"clinicaexemplo.exemplo",
+    scope:"Site público e tela de login do painel", approach:"Caixa-cinza, ritmo controlado, com autorização",
+    tools:["OWASP ZAP","Burp Suite","Nikto","Nmap","dig (DNS)"],
+    findings:[
+      { id:"SVX-01", t:"Painel administrativo sem limite de tentativas de login", sev:"Alta", cvss:"7.5", cat:"A07:2021 Falhas de identificação e autenticação",
+        ev:"A tela de login aceita tentativas ilimitadas, sem bloqueio nem atraso progressivo.", imp:"Permite ataque de força bruta contra contas administrativas.",
+        rec:"Limitar tentativas por conta e por IP, aplicar atraso progressivo e exigir autenticação em dois fatores.", tool:"OWASP ZAP em ritmo controlado, dentro do escopo autorizado" },
+      { id:"SVX-02", t:"Arquivo de backup acessível publicamente", sev:"Alta", cvss:"7.5", cat:"A05:2021 Configuração incorreta de segurança",
+        ev:"Um arquivo compactado de backup responde na raiz do site.", imp:"Pode expor código-fonte e credenciais de configuração.",
+        rec:"Remover o arquivo, trocar credenciais que possam ter sido expostas e bloquear extensões de backup no servidor.", tool:"Nikto e Nmap (http-enum)" },
+      { id:"SVX-03", t:"XSS refletido no campo de busca", sev:"Média", cvss:"6.1", cat:"A03:2021 Injeção",
+        ev:"O parâmetro de busca volta para a página sem escape adequado ao contexto.", imp:"Um link malicioso pode executar script no navegador da vítima.",
+        rec:"Escapar a saída conforme o contexto e aplicar uma CSP restritiva.", tool:"OWASP ZAP (varredura ativa) e validação manual no Burp Suite" },
+      { id:"SVX-04", t:"Formulário de contato sem proteção contra abuso", sev:"Média", cvss:"4.3", cat:"A04:2021 Design inseguro",
+        ev:"O formulário não tem limite de envio, token anti-CSRF nem verificação anti-robô.", imp:"Permite spam em massa e uso do formulário para disparar e-mails indesejados.",
+        rec:"Adicionar token CSRF, limite de envios por IP e verificação anti-robô.", tool:"Burp Suite (Repeater)" },
+      { id:"SVX-05", t:"Domínio de e-mail sem política DMARC", sev:"Baixa", cvss:"3.7", cat:"A05:2021 Configuração incorreta de segurança",
+        ev:"O domínio não publica DMARC e o registro SPF é permissivo.", imp:"Facilita o envio de e-mails falsos em nome da empresa.",
+        rec:"Publicar SPF restrito, DKIM e DMARC, começando em p=none com monitoramento.", tool:"dig (consultas DNS)" }
+    ] }
+];
+
+var CODE = [
+  [["c","// configuração do site"]],
+  [["k","const"],["n"," site = "],["k","criar"],["n","({"]],
+  [["n","  marca: "],["s","\"seu negócio\""],["n",","]],
+  [["n","  layout: "],["s","\"responsivo\""],["n",","]],
+  [["n","  desempenho: "],["s","\"rápido\""],["n",","]],
+  [["n","  acessivel: "],["k","true"],["n",","]],
+  [["n","});"]],
+  [["n",""]],
+  [["k","publicar"],["n","(site);"]]
+];
+
+/* ============================================================ */
+(function(){
+"use strict";
+var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+var root=document.documentElement;
+
+/* links reais (sobrescrevem os href estáticos com os valores da CONFIG) */
+function wa(k){return "https://wa.me/"+CONFIG.whatsapp+"?text="+encodeURIComponent(CONFIG.messages[k])}
+$$("[data-wa]").forEach(function(a){a.href=wa(a.getAttribute("data-wa"))});
+$$("[data-ig]").forEach(function(a){a.href=CONFIG.instagram[a.getAttribute("data-ig")]});
+var yr=$("#yr"); if(yr) yr.textContent=new Date().getFullYear();
+
+/* carregamento -> intro */
+var started=false;
+function start(){ if(started) return; started=true; root.classList.add("done"); setTimeout(function(){root.classList.add("ready")},reduce?0:350); setTimeout(function(){var l=$("#loader"); if(l) l.style.display="none"},1400); }
+if(reduce){ start() } else {
+  var minT=new Promise(function(r){setTimeout(r,1500)});
+  var fontsReady=(document.fonts&&document.fonts.ready)?Promise.race([document.fonts.ready,new Promise(function(r){setTimeout(r,2200)})]):Promise.resolve();
+  Promise.all([minT,fontsReady]).then(start); setTimeout(start,3000);
+}
+
+/* rolagem suave + menu */
+function goTo(id){var el=document.getElementById(id); if(!el) return; try{el.scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"})}catch(e){el.scrollIntoView()}}
+document.addEventListener("click",function(e){
+  var a=e.target.closest&&e.target.closest("a[data-go]"); if(!a) return;
+  var id=(a.getAttribute("href")||"").replace("#",""); if(!id) return;
+  e.preventDefault(); closeMenu(); setTimeout(function(){goTo(id)},sheet.classList.contains("open")?0:0);
+});
+var burger=$("#burger"), sheet=$("#sheet");
+function openMenu(){sheet.classList.add("open");sheet.setAttribute("aria-hidden","false");burger.setAttribute("aria-expanded","true");burger.setAttribute("aria-label","Fechar menu");document.body.classList.add("lock")}
+function closeMenu(){sheet.classList.remove("open");sheet.setAttribute("aria-hidden","true");burger.setAttribute("aria-expanded","false");burger.setAttribute("aria-label","Abrir menu");document.body.classList.remove("lock")}
+burger.addEventListener("click",function(){sheet.classList.contains("open")?closeMenu():openMenu()});
+document.addEventListener("keydown",function(e){if(e.key==="Escape"&&sheet.classList.contains("open")){closeMenu();burger.focus()}});
+window.addEventListener("resize",function(){if(innerWidth>980&&sheet.classList.contains("open")) closeMenu()});
+
+/* progresso, navbar, parallax e botão flutuante */
+var nav=$("#nav"), prog=$("#prog"), waBtn=$("#wa"), ticking=false;
+function onScroll(){
+  var y=scrollY||0, h=document.documentElement.scrollHeight-innerHeight;
+  prog.style.transform="scaleX("+(h>0?Math.min(1,y/h):0)+")";
+  nav.classList.toggle("sc",y>24);
+  waBtn.classList.toggle("show",y>innerHeight*.5);
+  root.style.setProperty("--sy",y);
+  ticking=false;
+}
+addEventListener("scroll",function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});
+onScroll();
+
+/* seção ativa */
+var links=$$(".menu a.lk"), dots=$$("#dots a");
+if("IntersectionObserver" in window){
+  var so=new IntersectionObserver(function(es){es.forEach(function(en){
+    if(!en.isIntersecting) return; var id=en.target.id;
+    links.forEach(function(l){l.classList.toggle("on",l.getAttribute("href")==="#"+id||(id==="diferencial"&&false))});
+    dots.forEach(function(d){d.classList.toggle("on",d.getAttribute("data-s")===id)});
+  })},{rootMargin:"-45% 0px -50% 0px"});
+  $$("[data-sec]").forEach(function(s){so.observe(s)});
+}
+
+/* revelação ao rolar */
+var rv=$$(".rv");
+if("IntersectionObserver" in window&&!reduce){
+  var ro=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add("in");ro.unobserve(en.target)}})},{rootMargin:"0px 0px -6% 0px",threshold:.05});
+  rv.forEach(function(el){ro.observe(el)});
+} else rv.forEach(function(el){el.classList.add("in")});
+
+/* botões magnéticos */
+if(!reduce&&matchMedia("(hover:hover)").matches){
+  $$("[data-mag]").forEach(function(b){
+    b.addEventListener("pointermove",function(e){var r=b.getBoundingClientRect();b.style.transform="translate("+((e.clientX-r.left-r.width/2)*.12)+"px,"+((e.clientY-r.top-r.height/2)*.2)+"px)"});
+    b.addEventListener("pointerleave",function(){b.style.transform=""});
+  });
+}
+
+/* ---------- código digitado (WEBVEX) ---------- */
+(function(){
+  var pre=$("#code"); if(!pre) return;
+  function full(){pre.innerHTML=CODE.map(function(l){return l.map(function(p){return '<span class="'+p[0]+'">'+p[1].replace(/&/g,"&amp;").replace(/</g,"&lt;")+'</span>'}).join("")}).join("\n")}
+  full();
+  if(reduce||!("IntersectionObserver" in window)) return;
+  var done=false, io=new IntersectionObserver(function(es){if(es[0].isIntersecting&&!done){done=true;io.disconnect();type()}},{threshold:.4});
+  io.observe(pre);
+  function type(){
+    pre.innerHTML=""; var li=0,pi=0,ci=0,cur=null,cr=document.createElement("span"); cr.className="cr"; pre.appendChild(cr);
+    function step(){
+      if(li>=CODE.length) return;
+      var line=CODE[li];
+      if(pi>=line.length){pre.insertBefore(document.createTextNode("\n"),cr);li++;pi=0;ci=0;cur=null;return setTimeout(step,70)}
+      var part=line[pi];
+      if(!cur){cur=document.createElement("span");cur.className=part[0];pre.insertBefore(cur,cr)}
+      if(ci<part[1].length){cur.textContent+=part[1][ci++];setTimeout(step,24+Math.random()*30)} else {pi++;ci=0;cur=null;step()}
+    }
+    step();
+  }
+})();
+
+/* ---------- visão: ciclo de 5 pontos ---------- */
+(function(){
+  var box=$("#ringv"), list=$("#vlist"); if(!box) return;
+  var N=VISION.length, C=260, R=190, pts=[];
+  for(var i=0;i<N;i++){var a=-Math.PI/2+i*2*Math.PI/N;pts.push([C+R*Math.cos(a),C+R*Math.sin(a),a])}
+  var s='<svg viewBox="0 0 520 520" fill="none" aria-hidden="true"><circle cx="260" cy="260" r="250" stroke="rgba(229,231,235,.08)" stroke-dasharray="2 8"/>';
+  s+='<polygon class="poly" points="'+pts.map(function(p){return p[0].toFixed(1)+","+p[1].toFixed(1)}).join(" ")+'"/>';
+  for(i=0;i<N;i++){var q=pts[(i+2)%N];s+='<line class="star" x1="'+pts[i][0].toFixed(1)+'" y1="'+pts[i][1].toFixed(1)+'" x2="'+q[0].toFixed(1)+'" y2="'+q[1].toFixed(1)+'"/>'}
+  for(i=0;i<N;i++){var n=pts[(i+1)%N];s+='<line class="seg" data-i="'+i+'" x1="'+pts[i][0].toFixed(1)+'" y1="'+pts[i][1].toFixed(1)+'" x2="'+n[0].toFixed(1)+'" y2="'+n[1].toFixed(1)+'"/>'}
+  for(i=0;i<N;i++){s+='<g class="nd" data-i="'+i+'" transform="translate('+pts[i][0].toFixed(1)+' '+pts[i][1].toFixed(1)+')"><circle r="26" fill="transparent"/><circle class="o" r="11"/><circle r="3.5" fill="#E5E7EB"/></g>'}
+  if(!reduce){s+='<circle r="3" fill="#00FF7A"><animateMotion dur="15s" repeatCount="indefinite" path="M'+pts.map(function(p){return p[0].toFixed(1)+" "+p[1].toFixed(1)}).join("L")+'Z"/></circle>'}
+  s+='</svg>';
+  var lab='';
+  for(i=0;i<N;i++){var ox=pts[i][0]/520*100, oy=pts[i][1]/520*100, dx=Math.cos(pts[i][2])*10.5, dy=Math.sin(pts[i][2])*9; lab+='<span class="nm" data-i="'+i+'" style="left:'+(ox+dx)+'%;top:'+(oy+dy)+'%">'+VISION[i].t+'</span>'}
+  lab+='<div class="cen"><svg viewBox="0 0 64 64" fill="none"><path d="M32 4 56 18v28L32 60 8 46V18z" stroke="#00FF7A" stroke-width="2.5"/><path d="M20 24l12 22 12-22" stroke="#E5E7EB" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>VEXORA</span></div>';
+  box.innerHTML=s+lab;
+  list.innerHTML=VISION.map(function(v,i){return '<li data-i="'+i+'"><button type="button" aria-expanded="false"><span class="nn">0'+(i+1)+'</span><span class="tt">'+v.t+'</span><span class="ds">'+v.d+'</span></button></li>'}).join("");
+  var cur=-1, timer=null, hold=false;
+  function set(i){
+    cur=i;
+    $$("[data-i]",box).forEach(function(el){var k=+el.getAttribute("data-i");
+      if(el.classList.contains("seg")) el.classList.toggle("on",k===i); else el.classList.toggle("on",k===i)});
+    $$("li",list).forEach(function(li){var on=+li.getAttribute("data-i")===i;li.classList.toggle("on",on);$("button",li).setAttribute("aria-expanded",on)});
+  }
+  function play(){ if(reduce) return; clearInterval(timer); timer=setInterval(function(){if(!hold&&!document.hidden) set((cur+1)%N)},3000) }
+  list.addEventListener("click",function(e){var li=e.target.closest("li");if(li){set(+li.getAttribute("data-i"));play()}});
+  box.addEventListener("click",function(e){var g=e.target.closest(".nd");if(g){set(+g.getAttribute("data-i"));play()}});
+  [box,list].forEach(function(el){el.addEventListener("pointerenter",function(){hold=true});el.addEventListener("pointerleave",function(){hold=false});el.addEventListener("focusin",function(){hold=true});el.addEventListener("focusout",function(){hold=false})});
+  $$("li",list).forEach(function(li){li.addEventListener("pointerenter",function(){set(+li.getAttribute("data-i"))})});
+  set(0); play();
+})();
+
+/* ---------- vitrine ---------- */
+(function(){
+  var g=$("#pgrid"); if(!g) return;
+  function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+  var html=PROJECTS.map(function(p,i){
+    var t=p.theme, st='--bg:'+t.bg+';--fg:'+t.fg+';--ac:'+t.ac+';--ff:'+t.ff;
+    var feats=p.items.map(function(x){return '<div>'+esc(x)+'</div>'}).join("");
+    var navs=p.nav.map(function(x){return '<span>'+esc(x)+'</span>'}).join("");
+    var tag=p.tag?'<span class="pt">'+esc(p.tag)+'</span>':'';
+    var stack=p.stack.map(function(x){return '<li>'+esc(x)+'</li>'}).join("");
+    var open=p.url?'<a class="tl" href="'+esc(p.url)+'" target="_blank" rel="noopener noreferrer">Ver projeto ↗</a>':'';
+    return '<figure class="proj rv '+esc(p.variant||"")+'" style="'+esc(st)+';--d:'+(i*.1)+'s" tabindex="0" aria-label="'+esc(p.title)+'">'+
+      '<div class="stage" aria-hidden="true">'+
+        '<div class="desk"><div class="bar"><i></i><i></i><i></i><span>'+esc(p.host)+'</span></div>'+
+          '<div class="scr"><div class="pg"><div class="pn"><b>'+esc(p.brand)+'</b>'+navs+'</div>'+
+          '<div class="ph"><span class="art"></span><small>'+esc(p.kicker)+'</small><h4>'+esc(p.headline)+'</h4><p>'+esc(p.sub)+'</p><u>'+esc(p.cta)+'</u></div>'+
+          '<div class="f3">'+feats+'</div><div class="f3">'+feats+'</div><div class="pf"><span>'+esc(p.brand)+'</span><span>Todos os direitos reservados</span></div></div></div></div>'+
+        '<div class="phone"><div class="pp"><b>'+esc(p.brand)+'</b><h5>'+esc(p.headline)+'</h5><i></i><u>'+esc(p.cta)+'</u></div></div>'+
+      '</div>'+
+      '<figcaption>'+tag+'<h3>'+esc(p.title)+'</h3><p class="ds">'+esc(p.desc)+'</p><ul class="st">'+stack+'</ul>'+open+'</figcaption></figure>';
+  }).join("");
+  html+='<a class="proj next rv" style="--d:.3s" data-wa="main" href="'+wa("web")+'" target="_blank" rel="noopener noreferrer" data-wa-key="web"><div class="stage"><span class="plus" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M14 5v18M5 14h18"/></svg></span></div><div style="display:flex;flex-direction:column;gap:.6rem"><span class="pt">PRÓXIMO PROJETO</span><h3>O seu pode estar aqui.</h3><p class="ds">Conte sua ideia e receba uma proposta de site para o seu negócio.</p></div></a>';
+  g.innerHTML=html;
+  var nx=$(".proj.next",g); if(nx){nx.removeAttribute("data-wa")}
+  $$(".proj.rv",g).forEach(function(el){ if("IntersectionObserver" in window&&!reduce){var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){el.classList.add("in");io.disconnect()}},{rootMargin:"0px 0px -6% 0px"});io.observe(el)} else el.classList.add("in")});
+})();
+
+/* ---------- vitrine SECURAVEX: relatórios ---------- */
+(function(){
+  var g=$("#rgrid"); if(!g) return;
+  function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+  var cls={"Alta":"a","Média":"m","Baixa":"b"};
+  $("#method").innerHTML=METHOD.map(function(m,i){return '<li><b>0'+(i+1)+'</b><h3>'+esc(m.t)+'</h3><p>'+esc(m.d)+'</p></li>'}).join("");
+  $("#toolbar").innerHTML='<span>Ferramentas</span>'+TOOLS.map(function(t){return '<li>'+esc(t)+'</li>'}).join("")+'<span style="margin-left:1.2rem">Referências</span>'+REFS.map(function(t){return '<li>'+esc(t)+'</li>'}).join("");
+  g.innerHTML=REPORTS.map(function(r,ri){
+    var cnt={"Alta":0,"Média":0,"Baixa":0}; r.findings.forEach(function(f){cnt[f.sev]++});
+    var bar=["Alta","Média","Baixa"].filter(function(k){return cnt[k]}).map(function(k){return '<i class="'+cls[k]+'" style="flex:'+cnt[k]+'"></i>'}).join("");
+    var lg=["Alta","Média","Baixa"].map(function(k){return '<span class="'+cls[k]+'"><b>'+cnt[k]+'</b> '+k+'</span>'}).join("");
+    var fl=r.findings.map(function(f,fi){
+      return '<li'+(fi===0?' class="on"':'')+'><button type="button" aria-expanded="'+(fi===0)+'" aria-controls="f'+ri+'-'+fi+'"><span class="id">'+esc(f.id)+'</span><span class="tt">'+esc(f.t)+'</span><span class="pill '+cls[f.sev]+'">'+esc(f.sev)+' <span class="cv">'+esc(f.cvss)+'</span></span></button>'+
+        '<div class="fpn" id="f'+ri+'-'+fi+'" role="region"><div class="pi">'+
+        '<div><h4>Evidência</h4><p>'+esc(f.ev)+'</p></div><div><h4>Impacto</h4><p>'+esc(f.imp)+'</p></div><div><h4>Recomendação</h4><p>'+esc(f.rec)+'</p></div>'+
+        '<div class="meta"><span>'+esc(f.cat)+'</span><span>Verificação: '+esc(f.tool)+'</span><span>CVSS 3.1: '+esc(f.cvss)+'</span></div></div></div></li>';
+    }).join("");
+    return '<article class="doc rv" style="--d:'+(ri*.12)+'s" aria-label="'+esc(r.title)+' - '+esc(r.sub)+'">'+
+      '<div class="dh"><span>'+esc(r.id)+'</span><em>Relatório de exemplo</em></div>'+
+      '<div class="db"><h3>'+esc(r.title)+'<small>'+esc(r.sub)+'</small></h3>'+
+      '<dl class="dl"><dt>Alvo fictício</dt><dd>'+esc(r.target)+'</dd><dt>Escopo</dt><dd>'+esc(r.scope)+'</dd><dt>Abordagem</dt><dd>'+esc(r.approach)+'</dd></dl>'+
+      '<div class="sev"><div class="sevbar" role="img" aria-label="Achados por gravidade">'+bar+'</div><div class="lg">'+lg+'</div></div>'+
+      '<ul class="fl">'+fl+'</ul></div>'+
+      '<div class="df"><span class="l">Ferramentas</span><ul style="display:contents">'+r.tools.map(function(t){return '<li>'+esc(t)+'</li>'}).join("")+'</ul></div></article>';
+  }).join("");
+  g.addEventListener("click",function(e){
+    var b=e.target.closest&&e.target.closest(".fl>li>button"); if(!b) return;
+    var li=b.parentNode, open=!li.classList.contains("on");
+    li.classList.toggle("on",open); b.setAttribute("aria-expanded",open);
+  });
+  $$(".doc.rv",g).forEach(function(el){ if("IntersectionObserver" in window&&!reduce){var io=new IntersectionObserver(function(es){if(es[0].isIntersecting){el.classList.add("in");io.disconnect()}},{rootMargin:"0px 0px -6% 0px"});io.observe(el)} else el.classList.add("in")});
+})();
+
+/* ---------- hero: composição 3D em canvas ---------- */
+(function(){
+  var cv=$("#heroCv"); if(!cv||!cv.getContext) return;
+  var ctx=cv.getContext("2d"), art=$("#heroArt"), W=0,H=0,dpr=1,R=1,run=false,vis=true,raf=0,t0=performance.now();
+  var tilt={x:0,y:0,tx:0,ty:0};
+  var TAU=Math.PI*2, phi=(1+Math.sqrt(5))/2;
+  function edgesBy(v,test){var e=[];for(var i=0;i<v.length;i++)for(var j=i+1;j<v.length;j++)if(test(v[i],v[j]))e.push([i,j]);return e}
+  function dist(a,b){return Math.hypot(a[0]-b[0],a[1]-b[1],a[2]-b[2])}
+  var ico=[];[[-1,phi,0],[1,phi,0],[-1,-phi,0],[1,-phi,0],[0,-1,phi],[0,1,phi],[0,-1,-phi],[0,1,-phi],[phi,0,-1],[phi,0,1],[-phi,0,-1],[-phi,0,1]].forEach(function(v){var l=Math.hypot(v[0],v[1],v[2]);ico.push([v[0]/l,v[1]/l,v[2]/l])});
+  var icoE=edgesBy(ico,function(a,b){return Math.abs(dist(a,b)-dist(ico[0],ico[1]))<1e-6});
+  var cube=[];for(var a=-1;a<=1;a+=2)for(var b=-1;b<=1;b+=2)for(var c=-1;c<=1;c+=2)cube.push([a,b,c]);
+  var cubeE=edgesBy(cube,function(p,q){return Math.abs(dist(p,q)-2)<1e-6});
+  var inner=cube.map(function(v){return [v[0]*.5,v[1]*.5,v[2]*.5]});
+  var oct=[[1,0,0],[-1,0,0],[0,1,0],[0,-1,0],[0,0,1],[0,0,-1]];
+  var octE=edgesBy(oct,function(p,q){return Math.abs(dist(p,q)-Math.SQRT2)<1e-6});
+  var s2=[];var seed=7;function rnd(){seed=(seed*16807)%2147483647;return seed/2147483647}
+  for(var i=0;i<70;i++){var u=rnd()*2-1,th=rnd()*TAU,r=Math.sqrt(1-u*u),d=.95+rnd()*.5;s2.push([r*Math.cos(th)*d,u*d,r*Math.sin(th)*d,rnd()])}
+  function rot(v,ax,ay,az){var x=v[0],y=v[1],z=v[2],c,s,t;
+    if(az){c=Math.cos(az);s=Math.sin(az);t=x*c-y*s;y=x*s+y*c;x=t}
+    c=Math.cos(ay);s=Math.sin(ay);t=x*c+z*s;z=-x*s+z*c;x=t;
+    c=Math.cos(ax);s=Math.sin(ax);t=y*c-z*s;z=y*s+z*c;y=t;return [x,y,z]}
+  function proj(p){var k=1/(1+p[2]*.32);return [W/2+p[0]*R*k,H/2+p[1]*R*k,k,p[2]]}
+  function al(z){var a=.5-z*.38;return a<.12?.12:a>1?1:a}
+  function size(){var r=art.getBoundingClientRect();dpr=Math.min(window.devicePixelRatio||1,innerWidth<720?1.5:2);W=Math.max(1,Math.round(r.width));H=Math.max(1,Math.round(r.height));cv.width=W*dpr;cv.height=H*dpr;R=Math.min(W,H)*.42;ctx.setTransform(dpr,0,0,dpr,0,0);draw(performance.now())}
+  function wireframe(verts,edges,sc,spin,pos,cam,color,lw,labelAlpha){
+    var P=verts.map(function(v){var q=rot([v[0]*sc,v[1]*sc,v[2]*sc],spin[0],spin[1],spin[2]);q[0]+=pos[0];q[1]+=pos[1];q[2]+=pos[2];q=rot(q,cam[0],cam[1],0);return proj(q)});
+    ctx.lineWidth=lw;
+    edges.forEach(function(e){var a=P[e[0]],b=P[e[1]],z=(a[3]+b[3])/2;ctx.strokeStyle="rgba("+color+","+al(z)+")";ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);ctx.stroke()});
+    ctx.fillStyle="rgba("+color+",.9)";P.forEach(function(p){var s=1.2+1.4*p[2];ctx.globalAlpha=al(p[3]);ctx.beginPath();ctx.arc(p[0],p[1],s,0,TAU);ctx.fill()});ctx.globalAlpha=1;
+    return P;
+  }
+  function ringPts(rad,tx,tz,n){var o=[];for(var i=0;i<=n;i++){var a=i/n*TAU;o.push(rot([Math.cos(a)*rad,0,Math.sin(a)*rad],tx,0,tz))}return o}
+  function drawRing(pts,cam,color,dash){
+    ctx.lineWidth=1;var prev=null;
+    pts.forEach(function(p,i){var q=proj(rot(p,cam[0],cam[1],0));if(prev&&(!dash||i%2)){ctx.strokeStyle="rgba("+color+","+al((q[3]+prev[3])/2)*.55+")";ctx.beginPath();ctx.moveTo(prev[0],prev[1]);ctx.lineTo(q[0],q[1]);ctx.stroke()}prev=q});
+  }
+  var ringA=ringPts(1.02,.35,.15,96), ringB=ringPts(.74,1.1,-.4,80);
+  function label(txt,P,dx,dy,alpha){
+    ctx.font="500 "+(W<420?9:11)+"px 'JetBrains Mono',ui-monospace,monospace";var c=[0,0,0];P.forEach(function(p){c[0]+=p[0];c[1]+=p[1]});var x=c[0]/P.length,y=c[1]/P.length;
+    ctx.strokeStyle="rgba(229,231,235,"+alpha*.35+")";ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(x,y);ctx.lineTo(x+dx*.6,y+dy);ctx.lineTo(x+dx,y+dy);ctx.stroke();
+    ctx.fillStyle="rgba(229,231,235,"+alpha+")";ctx.textAlign=dx<0?"right":"left";ctx.textBaseline="bottom";ctx.fillText(txt,x+dx+(dx<0?-6:6),y+dy-4);
+  }
+  function draw(now){
+    var t=(now-t0)/1000; if(reduce) t=3.2;
+    tilt.x+=(tilt.tx-tilt.x)*.05; tilt.y+=(tilt.ty-tilt.y)*.05;
+    ctx.clearRect(0,0,W,H);
+    var cam=[-.32+tilt.y*.35+Math.sin(t*.2)*.05, t*.12+tilt.x*.5];
+    ctx.globalCompositeOperation="lighter";
+    // partículas
+    s2.forEach(function(p){var q=proj(rot(p,cam[0],cam[1]+t*.03,0));var tw=.5+.5*Math.sin(t*1.3+p[3]*12);ctx.fillStyle="rgba(229,231,235,"+al(q[3])*.5*tw+")";ctx.fillRect(q[0],q[1],1.2*dpr/dpr*(0.8+q[2]),1.2*(0.8+q[2]))});
+    // anéis
+    drawRing(ringA,[cam[0],cam[1]+t*.1],"229,231,235",true);
+    drawRing(ringB,[cam[0],cam[1]-t*.16],"0,255,122",false);
+    // núcleo
+    var pulse=1+.03*Math.sin(t*1.6);
+    var core=wireframe(ico,icoE,.46*pulse,[t*.25,t*.4,0],[0,0,0],cam,"0,255,122",1.2);
+    wireframe(ico,icoE,.28,[-t*.3,-t*.5,.4],[0,0,0],cam,"229,231,235",.8);
+    // órbitas
+    var a1=t*.28, a2=a1+Math.PI;
+    function orb(a,r){var p=[Math.cos(a)*r,0,Math.sin(a)*r];return rot(p,.42,0,.2)}
+    var p1=orb(a1,.98), p2=orb(a2,.98);
+    // conexões
+    ctx.setLineDash([3,7]);ctx.lineWidth=1;
+    [p1,p2].forEach(function(p){var a=proj(rot([0,0,0],cam[0],cam[1],0)),b=proj(rot(p,cam[0],cam[1],0));ctx.strokeStyle="rgba(0,255,122,.35)";ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);ctx.stroke()});
+    ctx.setLineDash([]);
+    var web=wireframe(cube,cubeE,.2,[t*.5,t*.7,t*.2],p1,cam,"229,231,235",1.1);
+    wireframe(inner,cubeE,.2,[-t*.4,t*.6,0],p1,cam,"0,255,122",1);
+    var sec=wireframe(oct,octE,.3,[t*.3,-t*.6,0],p2,cam,"0,255,122",1.2);
+    wireframe(oct,octE,.16,[-t*.4,t*.5,.3],p2,cam,"229,231,235",.8);
+    ctx.globalCompositeOperation="source-over";
+    // rótulos
+    var la=W<420?.0:1; if(W>=340){label("WEBVEX",web,-26,-34,.85);label("SECURAVEX",sec,28,32,.85);label("VEXORA",core,36,-R*.52,.7)}
+  }
+  function loop(now){raf=0;if(!run||!vis||document.hidden) return;draw(now);raf=requestAnimationFrame(loop)}
+  function kick(){if(reduce||raf||!vis)return;run=true;raf=requestAnimationFrame(loop)}
+  if("ResizeObserver" in window) new ResizeObserver(size).observe(art); else addEventListener("resize",size);
+  size();
+  if(reduce) return;
+  if("IntersectionObserver" in window) new IntersectionObserver(function(es){vis=es[0].isIntersecting;if(vis)kick()},{threshold:0}).observe(art);
+  document.addEventListener("visibilitychange",function(){if(!document.hidden)kick()});
+  addEventListener("pointermove",function(e){var r=art.getBoundingClientRect();tilt.tx=((e.clientX-(r.left+r.width/2))/innerWidth);tilt.ty=((e.clientY-(r.top+r.height/2))/innerHeight)},{passive:true});
+  kick();
+})();
+})();
+</script>
+
+</body></html>
